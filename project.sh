@@ -2,9 +2,13 @@
 
 FORMATS=(
     apng bmp doc docbook docm docx dot dotx emf emz eps epub fodg fodt gif
-    html jpg otg ott pdf png rtf svg svgz tif txt uot webp wmf wmz wordxml
+    html jpg odg otg ott pdf png rtf svg svgz tif txt uot webp wmf wmz wordxml
     xhtml
 )
+
+status=0
+
+cd "$(dirname "$0")" || exit 1
 
 require() {
 
@@ -18,55 +22,123 @@ require() {
 
 }
 
+projects() {
+
+    find scripts -mindepth 1 -maxdepth 1 -type d ! -name __pycache__ -printf '%f\n' | sort
+
+}
+
+output() {
+
+    case "$2" in
+        odf) echo "odf/$1.odt" ;;
+        docbook|wordxml) echo "build/$1.$2.xml" ;;
+        *) echo "build/$1.$2" ;;
+    esac
+
+}
+
 run() {
 
-    require python3
-    require soffice
+    local script file
+    [ "$2" = "odf" ] && script="saveodf" || script="export$2"
+    file=$(output "$1" "$2")
 
-    find scripts -maxdepth 2 -mindepth 2 -type f -name "$1" -exec {} \;
+    if [ -e "$file" ]; then
+        echo "Skipping $file (already exists)"
+        return
+    fi
+
+    PROJECT="$1" PYTHONPATH="scripts${PYTHONPATH:+:$PYTHONPATH}" python3 "scripts/$script.py" || {
+        echo "FAILED: $script for $1" >&2
+        status=1
+    }
 
 }
 
-save() {
+remove() {
 
-    run "save*.py"
+    local file
+    file=$(output "$1" "$2")
+
+    if [ -e "$file" ]; then
+        rm -f "$file"
+        echo "Removed $file"
+    fi
 
 }
 
-build() {
+process() {
 
-    run "*.py"
+    local format
+    if [ "$2" = "all" ]; then
+        for format in "${FORMATS[@]}" odf; do
+            "$3" "$1" "$format"
+        done
+    else
+        "$3" "$1" "$2"
+    fi
 
 }
 
 clean() {
 
-    rm -rf build
-
-}
-
-export_format() {
-
-    run "export$1.py"
+    rm -rf build odf
 
 }
 
 usage() {
 
     local IFS="|"
-    echo "You should use: $0 {save|build|clean|${FORMATS[*]}}" >&2
+    echo "You should use: $0 clean" >&2
+    echo "            or: $0 {all|<project>} {all|odf|${FORMATS[*]}}" >&2
+    echo "            or: $0 {all|<project>} clean" >&2
+    echo "            or: $0 {all|<project>} {odf|${FORMATS[*]}} clean" >&2
+    echo "Projects: $(projects | paste -sd' ')" >&2
     exit 1
 
 }
 
-cd "$(dirname "$0")" || exit 1
+valid_format() {
 
-case "$1" in
-    save|build|clean) "$1" ;;
-    *)
-        for format in "${FORMATS[@]}"; do
-            [ "$1" = "$format" ] && { export_format "$1"; exit; }
-        done
-        usage
-        ;;
-esac
+    local format
+    [ "$1" = "all" ] || [ "$1" = "odf" ] && return 0
+    for format in "${FORMATS[@]}"; do
+        [ "$1" = "$format" ] && return 0
+    done
+    return 1
+
+}
+
+[ "$1" = "clean" ] && [ $# -eq 1 ] && { clean; exit; }
+
+if [ $# -eq 2 ] && [ "$2" = "clean" ]; then
+    format="all"
+    action="remove"
+elif [ $# -eq 3 ] && [ "$3" = "clean" ]; then
+    format="$2"
+    action="remove"
+elif [ $# -eq 2 ]; then
+    format="$2"
+    action="run"
+else
+    usage
+fi
+
+valid_format "$format" || usage
+
+if [ "$1" = "all" ]; then
+    mapfile -t targets < <(projects)
+elif [ -d "scripts/$1" ]; then
+    targets=("$1")
+else
+    usage
+fi
+
+[ "$action" = "run" ] && { require soffice; require python3; }
+
+for project in "${targets[@]}"; do
+    process "$project" "$format" "$action"
+done
+
+exit "$status"
