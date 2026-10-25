@@ -1,17 +1,17 @@
 # libreoffice-scripts
 
-Python scripts that build documents as flat OpenDocument XML and convert
-them with LibreOffice into PDF, Word, images and about thirty other formats.
-Every document is a small project of its own in `scripts/`, and one shell
-script builds any project into any format.
+Python scripts that write documents as flat OpenDocument XML, and a shell
+script that converts them with LibreOffice into PDF, Word, images and about
+thirty other formats. Each document is a self-contained project in
+`scripts/` with AI-generated content.
 
 ## Requirements
 
-- LibreOffice (`soffice` on the `PATH`), run headless
-- Python 3 (standard library only)
-- The fonts the projects use, e.g. Lato, Liberation, DejaVu, TeX Gyre and
-  Quicksand; LibreOffice falls back to other fonts when one is missing, but
-  then page counts may change
+- LibreOffice, with `soffice` on the `PATH`
+- Python 3, standard library only
+- The fonts the projects use (Lato, Liberation, DejaVu, TeX Gyre, URW,
+  Quicksand and others). LibreOffice substitutes missing fonts, but page
+  counts may then change.
 
 ## Usage
 
@@ -30,20 +30,20 @@ For example:
 ./project.sh job-hunting-nika-creative-technologist-cv-onepage pdf
 ```
 
-Outputs go to `build/<project>.<format>`, and `odf` builds go to
-`odf/<project>.odt`. Existing outputs are skipped; clean them to rebuild.
-Running `./project.sh` without arguments lists the formats and projects.
+Outputs go to `build/<project>.<format>`, and `odf` outputs to
+`odf/<project>.odt`. Existing outputs are skipped, so clean them to
+rebuild. Without arguments, `./project.sh` lists the formats and projects.
 
 ### Formats
 
 `apng bmp doc docbook docm docx dot dotx emf emz eps epub fodg fodt gif
 html jpg odg otg ott pdf png rtf svg svgz tif txt uot webp wmf wmz wordxml
-xhtml` and `odf`.
+xhtml odf`
 
-Text documents convert best to the Writer formats (`pdf`, `odf`, `docx`,
-`doc`, `rtf`, `html`, `txt`, `epub`, ...). The image and drawing formats
-(`png`, `svg`, `gif`, `eps`, `odg`, ...) go through LibreOffice Draw and
-only keep shapes placed on the page, so flowing text comes out blank.
+Documents convert best to Writer formats such as `pdf`, `odf`, `docx` and
+`html`. Image and drawing formats such as `png`, `svg` and `odg` go through
+LibreOffice Draw, which keeps only shapes placed on the page, so flowing
+text comes out blank.
 
 ## How it works
 
@@ -59,85 +59,129 @@ project.sh ──> scripts/export<format>.py ──> scripts/common.py
 
 - `project.sh` checks the arguments and runs `scripts/export<format>.py`
   (or `scripts/saveodf.py`) with `PROJECT=<project>`.
-- `scripts/common.py` imports the project and calls its function, then
-  runs LibreOffice with a throwaway user profile, so it never touches a
-  running LibreOffice and conversions can run in parallel.
-- Each `scripts/export<format>.py` names the LibreOffice filter and its
+- `scripts/common.py` imports the project, calls its function and runs
+  LibreOffice with a throwaway profile, so it never touches a running
+  LibreOffice and conversions can run in parallel.
+- Each `scripts/export<format>.py` sets the LibreOffice filter and its
   options for one format.
 
 ## Projects
 
-A project is a folder `scripts/<theme>-<name>/` with a module `<name>.py`
-that defines a function `<name>()` returning a flat ODT document as a
-string. The part of the folder name after the last hyphen is the module
-and function name, so it must be a valid Python name.
+A project is a folder `scripts/<name>-<length>/`, where `<length>` is
+`onepage`, `twopages` or `fourpages`:
 
 ```
 scripts/job-hunting-nika-creative-technologist-cv-onepage/
-├── onepage.py       # def onepage(): the document's design and entry point
-├── content.py       # PERSONA and DOCUMENT: who and what
-└── typesetting.py   # turns them into a flat ODT of exactly N pages
+├── onepage.py       # DESIGN and onepage(), which returns the flat ODT
+├── content.py       # the subject and the DOCUMENT: everything it could say
+└── typesetting.py   # turns content and design into exactly N pages
 ```
 
-Projects are self-contained: everything a project needs lives in its
-folder, and other files in `scripts/` are only the exporters and
-`common.py`.
+The last part of the folder name is the module and function name, so it
+must be a valid Python name. A project needs nothing outside its folder.
+
+**Exact page counts.** Fonts are never shrunk to fit. Every paragraph,
+entry, table row and chart in `content.py` has a priority, and the
+typesetter keeps the most important ones that fit, in document order. It
+estimates line wrapping from each font's average character width; the
+project management and accounting typesetters also simulate the page
+breaks. The one, two and four page versions of a document share the same
+content and design, cut to different lengths.
+
+**Content.** `content.py` defines the subject (`PERSONA`, `PROJECT` or
+`BUSINESS`) and the `DOCUMENT`: a title and sections. Each section has a
+`kind` and priorities:
+
+- `weight`: priority of its first item (lower is more important)
+- `step`: how much less important each following item is
+- `inner`: the same, for the lines inside an entry
+- `min_pages` / `max_pages`: the lengths the section appears in
+
+`**bold**` and `*italic*` work in all text.
+
+**Design.** The `DESIGN` dict sets colors, fonts, density, margins and the
+style of the header and headings, and where they exist, the orientation,
+tables and charts. See `stylesheet()` (and `Theme`) in `typesetting.py`
+for every option.
+
+There are three families of projects, each with ten subjects in three
+lengths.
+
+### Accounting
+
+Financial documents of fictional businesses, named
+`accounting-<business>-<type>-<document>-<length>`. Each business has a
+statement, a transactional document, a form or return, a register or
+schedule, and an analysis, and every document has its own design.
+
+| Business | Type | Documents |
+|---|---|---|
+| atelier-nord-architects | architecture-studio | client-invoice, staff-expense-claim, work-in-progress-schedule, utilisation-report, partner-capital-account-statement |
+| bright-smile-dental | dental-practice | monthly-management-accounts, payslip, bank-reconciliation, accounts-receivable-aging, revenue-by-treatment-analysis |
+| copperline-bicycle-works | bicycle-manufacturing | manufacturing-account, sales-order-confirmation, year-end-close-checklist, product-cost-sheet, capital-investment-appraisal |
+| hollow-oak-winery | wine-estate | balance-sheet, purchase-order, excise-duty-return, fixed-asset-register, harvest-cost-allocation |
+| lumen-analytics-saas | software-subscription | cash-flow-statement, order-form, rd-tax-credit-claim, cap-table, burn-and-runway-report |
+| northbound-freight-haulage | road-haulage | trial-balance, remittance-advice, fuel-card-reconciliation, loan-amortisation-schedule, cost-per-mile-report |
+| open-shelf-library-trust | community-charity | statement-of-financial-activities, gift-aid-claim, restricted-funds-register, grant-expenditure-report, donor-receipt |
+| rye-and-crumb-bakery | artisan-bakery | profit-and-loss-statement, wholesale-invoice, daily-till-reconciliation, thirteen-week-cash-flow-forecast, break-even-analysis |
+| salt-and-pine-hotel | boutique-hotel | departmental-profit-and-loss, guest-folio, night-audit-report, annual-operating-budget, revpar-performance-report |
+| tidewear-outdoor-apparel | ecommerce-brand | income-statement-by-channel, credit-note, vat-return, inventory-valuation-report, unit-economics-report |
+
+Figures are computed in `content.py`, so statements add up and related
+documents agree. The typesetter is the project management one (see below)
+with additions for financial statements: row styles (`section`, `indent`,
+`subtotal`, `total` with a double rule, `highlight`, `muted`), per-row
+`min_pages` and `max_pages`, `whole` tables that are never split,
+borderless tables (`look: "plain"`) for addresses and signatures, and two
+more charts: `sankey` for money flows and `gauges` for ratios.
 
 ### Job hunting
 
-The `job-hunting-*` projects are CVs, cover letters and portfolio
-documents of fictional people, named
+CVs, cover letters and portfolio pieces of fictional people in the digital
+industries, named `job-hunting-<persona>-<job>-<document>-<length>`. Each
+persona has a look of its own, from Swiss brutalist to till receipt.
 
-```
-job-hunting-<persona>-<job>-<document>-<onepage|twopages|fourpages>
-```
+| Persona | Job | Documents |
+|---|---|---|
+| felix | information-designer | cv, cover-letter, process-book |
+| ines | ui-artist | cv, cover-letter, devlog |
+| kai | visualisation-artist | cv, cover-letter, showreel-breakdown |
+| leo | junior-frontend-developer | cv, cover-letter, learning-log |
+| maks | xr-lead | cv, cover-letter, prototype-log |
+| nika | creative-technologist | cv, cover-letter, code-sketchbook |
+| otto | principal-engineer | cv, cover-letter, open-source-portfolio |
+| ruth | art-director | cv, cover-letter, artist-statement |
+| yuki | sound-designer | cv, cover-letter, sound-portfolio |
+| zara | medical-animator | cv, cover-letter, animation-treatment |
 
-There are ten personas from the digital industries, each with three
-documents in three lengths:
+Section kinds: `text`, `entries`, `bullets`, `tags` and `motto`.
 
-| Persona | Applying as | Extra document | Look |
-|---|---|---|---|
-| felix | information designer | process-book | Swiss brutalist |
-| ines | UI artist | devlog | arcade |
-| kai | visualisation artist | showreel-breakdown | blueprint |
-| leo | junior frontend developer | learning-log | till receipt |
-| maks | XR lead | prototype-log | neon |
-| nika | creative technologist | code-sketchbook | terminal |
-| otto | principal engineer | open-source-portfolio | Markdown |
-| ruth | art director | artist-statement | zine |
-| yuki | sound designer | sound-portfolio | printed score |
-| zara | medical animator | animation-treatment | cinema |
+### Project management
 
-Every persona has a `cv`, a `cover-letter` and the extra document, each in
-one, two and four pages.
+Plans, reports and registers of fictional projects, named
+`project-management-<project>-<category>-<document>-<length>`. Schedules
+such as the run of show and the cutover runbook are landscape.
 
-**Exact page counts.** `typesetting.py` does not shrink fonts to fit.
-Every paragraph, entry and bullet in `content.py` has a priority, and the
-typesetter keeps the most important ones that fit into the estimated
-height of the pages, in the order of the document. Line heights are fixed
-and line wrapping is estimated from the average character width of each
-font, so a one-page CV, a two-page CV and a four-page CV are the same
-content, cut differently.
+| Project | Category | Documents |
+|---|---|---|
+| arctic-ice-cubesat-mission | aerospace-engineering | work-breakdown-structure, requirements-verification-matrix, mass-power-budget, launch-campaign-plan, risk-burndown-report |
+| deep-sea-museum-exhibition | cultural-exhibition | creative-brief, object-loan-tracker, design-review-minutes, installation-schedule, visitor-evaluation-report |
+| harbour-bridge-retrofit | civil-infrastructure | project-charter, earned-value-report, risk-register, three-week-lookahead, change-order-log |
+| headquarters-relocation | workplace-change | move-schedule, stack-plan, change-impact-assessment, vendor-evaluation-matrix, communication-plan |
+| hospital-ehr-migration | healthcare-it | cutover-runbook, go-live-readiness, training-plan, data-migration-report, raci-matrix |
+| lighthouse-indie-game-launch | game-development | milestone-plan, playtest-report, bug-triage-report, launch-marketing-calendar, postmortem |
+| mobile-banking-app-relaunch | agile-software | product-roadmap, sprint-review, release-plan, retrospective, okr-scorecard |
+| offshore-wind-farm | renewable-energy | business-case, stage-gate-review, consent-tracker, weather-window-plan, hse-dashboard |
+| summer-music-festival | event-production | run-of-show, production-budget, crew-roster, ticket-sales-dashboard, post-event-report |
+| vaccine-cold-chain-rollout | public-health-ngo | logical-framework, donor-progress-report, monitoring-evaluation-plan, situation-report, procurement-plan |
 
-**Content.** `content.py` holds `PERSONA` (name, headline, contact) and
-`DOCUMENT` (title and sections). A section has a `kind` (`text`,
-`entries`, `bullets`, `tags`, `motto`) and priorities:
-
-- `weight`: the priority of its first item; lower is more important
-- `step`: how much less important each next item is
-- `inner`: the same for the lines inside an entry
-- `min_pages` / `max_pages`: the lengths the section appears in
-
-Entries can have `items` (bullets), `fields` (label and text), `text`
-paragraphs and a low-priority `story` that only appears when there is
-room. `**bold**` and `*italic*` work in all text.
-
-**Design.** The `DESIGN` dict in the project module chooses the colors
-(`accent`, `ink`, `muted`, `page`), fonts (`font`, `heading_font`),
-`density`, `margin`, header and heading styles, `heading_format` (e.g.
-`"$ cat ~/{slug}.txt"` or `"Movement {roman} · {title}"`), `bullet`,
-`divider` and `footer`. See `stylesheet()` in `typesetting.py` for every
-option.
+These projects add `table`, `figure` and `callout` sections. A figure is
+one or more charts side by side, drawn as SVG so they stay sharp in every
+format: `gantt`, `line`, `bars`, `donut`, `risk`, `heatmap`, `kpis`,
+`timeline`, `waterfall`, `quadrant`, `progress`, `board`, `tree`, `funnel`
+and `chevrons`. Table cells can be colored by `badges`, such as RAG status
+or RACI letters. A figure's `height` can depend on the length, e.g.
+`{1: 150, 2: 170, 4: 190}`.
 
 ## License
 
