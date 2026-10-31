@@ -1,0 +1,177 @@
+"""Bug Triage Report of Keeper of the Last Light: the project and everything
+the document could say. The typesetting keeps what fits into two pages, the
+most important first."""
+
+PROJECT = {
+    "name": "Keeper of the Last Light",
+    "code": "KLL",
+    "author": "Tomás Lindgren, Lead Programmer, Tidepool Games",
+}
+
+DAYS = ["2 Dec", "4", "6", "8", "10", "12", "14", "16", "18", "20"]
+
+DOCUMENT = {
+    "title": "Bug Triage Report",
+    "subtitle": "Week 49 · the road to the release candidate on 15 "
+                "January · build 0.9.7",
+    "meta": [("Build", "0.9.7"), ("Open bugs", "164"),
+             ("A bugs", "6"), ("Fixed this week", "71"),
+             ("Target", "0 A, < 20 B by 15 Jan")],
+    "sections": [
+        {"kind": "figure", "weight": 0.1, "charts": [{"type": "kpis",
+         "tiles": [
+             {"label": "A · blockers", "value": "6", "status": "bad",
+              "delta": "▼ 3", "delta_status": "good",
+              "note": "crash, save loss, cert"},
+             {"label": "B · major", "value": "38", "status": "warn",
+              "delta": "▼ 9", "delta_status": "good",
+              "note": "target under 20"},
+             {"label": "C · minor", "value": "120", "status": 2,
+              "note": "polish, text"},
+             {"label": "Found / fixed", "value": "44 / 71", "status": 0,
+              "note": "this week"},
+         ]}]},
+        {"heading": "Burn towards the release candidate",
+         "kind": "figure", "weight": 0.2, "height": {1: 165, 2: 175,
+                                                     4: 185},
+         "charts": [{"type": "line", "x": DAYS, "format": "{:.0f}",
+          "title": "Open A and B bugs",
+          "series": [{"name": "A + B", "area": True,
+                      "values": [86, 82, 77, 71, 66, 60, 55, 49, 44,
+                                 None]},
+                     {"name": "Needed", "dash": True, "color": 4,
+                      "values": [86, 81, 76, 71, 65, 60, 55, 49, 44,
+                                 39]}],
+          "target": 20, "target_label": "RC limit"}]},
+        {"heading": "Blockers", "kind": "table", "weight": 0.3,
+         "step": 0.1, "badges": {"A": "bad", "Fixing": "warn",
+                                 "Repro": "info", "Fixed": "good"},
+         "columns": [("ID", 0.7), ("Bug", 3.6), ("Platform", 1),
+                     ("Owner", 0.9), ("State", 0.9, "center")],
+         "rows": [
+             ["#1412", "Save lost if the console sleeps during the "
+              "autosave", "Switch", "Tomás", "Fixing"],
+             ["#1388", "Crash when two boats sink in the same frame",
+              "Both", "Jae", "Fixing"],
+             ["#1430", "Game ignores the user's language setting "
+              "(cert)", "Switch", "Lena", "Fixing"],
+             ["#1441", "Lamp stays dark after loading a night save",
+              "Both", "Tomás", "Repro"],
+             ["#1446", "Storm island drops to 21 fps", "Switch",
+              "Porting", "Fixing"],
+             ["#1450", "Achievements do not unlock offline", "PC",
+              "Lena", "Repro"],
+         ]},
+        {"heading": "By area", "kind": "figure", "weight": 0.4,
+         "min_pages": 2, "height": 160, "charts": [{"type": "bars",
+          "horizontal": True, "stacked": True, "inside": True,
+          "categories": ["Boats and physics", "Save and load", "UI",
+                         "Weather", "Audio", "Localisation",
+                         "Performance"],
+          "series": [{"name": "A", "color": "bad",
+                      "values": [1, 2, 0, 0, 0, 1, 2]},
+                     {"name": "B", "color": "warn",
+                      "values": [9, 6, 7, 4, 3, 5, 4]},
+                     {"name": "C", "color": 2,
+                      "values": [18, 6, 41, 12, 14, 22, 7]}]}]},
+        {"heading": "Platforms", "kind": "figure", "weight": 0.5,
+         "min_pages": 2, "height": 140, "widths": [2, 3], "charts": [
+             {"type": "donut", "title": "Open bugs",
+              "segments": [("Switch only", 52), ("PC only", 31),
+                           ("Both", 81)],
+              "center": ("164", "open")},
+             {"type": "bars", "title": "Found and fixed per day",
+              "categories": DAYS[:9],
+              "series": [{"name": "Found", "color": 1,
+                          "values": [9, 7, 8, 6, 5, 6, 4, 5, 4]},
+                         {"name": "Fixed", "values": [10, 11, 12, 11, 10,
+                                                      12, 9, 11, 9]}],
+              "values": False},
+         ]},
+        {"heading": "Triage rules", "kind": "tags", "weight": 0.6,
+         "step": 0.1, "min_pages": 2, "items": [
+             ("A", "crash, save loss, progress blocked, or fails "
+                   "certification; fixed before anything else"),
+             ("B", "a player would notice and be annoyed; fixed before "
+                   "gold"),
+             ("C", "polish; fixed if there is time, or in the day-one "
+                   "patch"),
+             ("Won't fix", "agreed by the producer and the designer, "
+                           "with a reason"),
+         ]},
+        {"heading": "Ageing", "kind": "figure", "weight": 0.8,
+         "min_pages": 4, "height": 140, "charts": [{"type": "bars",
+          "title": "Open bugs by age", "subtitle": "days since reported",
+          "stacked": True,
+          "categories": ["0–7", "8–14", "15–30", "31–60", "60+"],
+          "series": [{"name": "A", "color": "bad",
+                      "values": [3, 2, 1, 0, 0]},
+                     {"name": "B", "color": "warn",
+                      "values": [12, 10, 9, 5, 2]},
+                     {"name": "C", "color": 2,
+                      "values": [30, 26, 28, 21, 15]}]}]},
+        {"heading": "Certification", "kind": "figure", "weight": 0.9,
+         "min_pages": 4, "height": 120, "charts": [{"type": "progress",
+          "format": "{:.0f} %", "items": [
+              {"label": "Switch guidelines checked", "value": 88,
+               "target": 100, "status": "warn"},
+              {"label": "Pre-check by the publisher", "value": 60,
+               "target": 100, "status": "warn"},
+              {"label": "Steam Deck verified checklist", "value": 100,
+               "status": "good"},
+              {"label": "Age ratings (IARC)", "value": 100,
+               "status": "good"},
+          ]}]},
+        {"heading": "Decisions this week", "kind": "bullets",
+         "weight": 1.0, "step": 0.2, "min_pages": 4, "items": [
+             "Storm island particles cut by 40 % on Switch only; the PC "
+             "keeps the full storm.",
+             "#1450 (offline achievements) moved to B: Steam syncs them "
+             "later anyway.",
+             "No new features until the RC; the fishing mini-game moves "
+             "to the first free update.",
+         ]},
+        {"heading": "Who fixes what", "kind": "figure", "weight": 1.1,
+         "min_pages": 4, "height": 130, "charts": [{"type": "bars",
+          "horizontal": True, "stacked": True,
+          "categories": ["Tomás", "Jae", "Lena", "Porting team",
+                         "Ana (art)"],
+          "series": [{"name": "A", "color": "bad",
+                      "values": [2, 1, 1, 2, 0]},
+                     {"name": "B", "color": "warn",
+                      "values": [9, 11, 8, 6, 4]},
+                     {"name": "C", "color": 2,
+                      "values": [21, 30, 27, 9, 33]}],
+          "inside": True}]},
+        {"heading": "Process", "kind": "text", "weight": 1.2, "step": 0.3,
+         "min_pages": 4, "paragraphs": [
+             "Triage runs every morning at 09:30 for fifteen minutes: "
+             "the producer, the lead programmer and the designer go "
+             "through every new bug, set its class and owner, and close "
+             "duplicates. Anyone can file a bug; only triage sets an A.",
+         ]},
+        {"heading": "Release candidate checklist", "kind": "table",
+         "weight": 1.25, "step": 0.1, "min_pages": 4,
+         "badges": {"Done": "good", "In progress": "warn",
+                    "Not started": "bad"},
+         "columns": [("Item", 4), ("State", 1.2, "center")],
+         "rows": [
+             ["Zero A bugs for five days running", "In progress"],
+             ["B bugs under 20", "In progress"],
+             ["Switch performance: 30 fps on every island",
+              "In progress"],
+             ["Localisation in 9 languages checked in game", "Done"],
+             ["Save compatibility from beta saves", "Done"],
+             ["Credits and legal screens", "Not started"],
+         ]},
+        {"heading": "Crashes", "kind": "figure", "weight": 1.3,
+         "min_pages": 4, "height": 130, "charts": [{"type": "line",
+          "title": "Crashes per 1,000 sessions", "subtitle": "playtest "
+          "builds", "x": ["0.9.0", "0.9.1", "0.9.2", "0.9.3", "0.9.4",
+                          "0.9.5", "0.9.6", "0.9.7"],
+          "format": "{:.1f}", "target": 1, "target_label": "RC limit",
+          "series": [{"name": "Crashes", "color": "bad", "area": True,
+                      "values": [9.4, 7.8, 5.6, 4.1, 3.3, 2.6, 1.9,
+                                 1.4]}]}]},
+    ],
+}
