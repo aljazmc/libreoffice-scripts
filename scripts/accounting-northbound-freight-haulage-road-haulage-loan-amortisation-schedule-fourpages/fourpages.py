@@ -1,0 +1,32 @@
+"""Loan Amortisation Schedule of Northbound Freight, four pages.
+
+Landscape. The full schedule, the terms, covenants and early repayment.
+"""
+from content import DOCUMENT, BUSINESS
+from typesetting import typeset
+
+DESIGN = {
+    "accent": "#2b2b2b",
+    "ink": "#1c1c1c",
+    "muted": "#5e5e5e",
+    "page": "#ffffff",
+    "font": "Liberation Sans Narrow",
+    "series": ["#1c1c1c", "#f2b705", "#8a8a8a", "#d9480f", "#c9c9c9"],
+    "good": "#4c9a2a",
+    "warn": "#f2b705",
+    "bad": "#d9480f",
+    "info": "#3b7ea1",
+    "radius": 0,
+    "orientation": "landscape",
+    "heading_font": "TeX Gyre Heros Cn",
+    "chart_font": "Liberation Sans Narrow",
+    "header": "bar",
+    "heading": "tint",
+    "table": "zebra",
+    "body_align": "start",
+    "footer": "NORTHBOUND FREIGHT LTD · Loan Amortisation Schedule",
+}
+
+
+def fourpages():
+    return typeset(BUSINESS, DOCUMENT, DESIGN, 4)
