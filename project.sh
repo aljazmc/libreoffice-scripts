@@ -94,7 +94,7 @@ usage() {
     echo "            or: $0 {all|<project>} {all|odf|${FORMATS[*]}}" >&2
     echo "            or: $0 {all|<project>} clean" >&2
     echo "            or: $0 {all|<project>} {odf|${FORMATS[*]}} clean" >&2
-    echo "Projects: $(projects | paste -sd' ')" >&2
+    echo "Projects: $(projects | head | paste -sd'\n' )" >&2
     exit 1
 
 }
