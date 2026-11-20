@@ -187,6 +187,28 @@ and `chevrons`. Table cells can be colored by `badges`, such as RAG status
 or RACI letters. A figure's `height` can depend on the length, e.g.
 `{1: 150, 2: 170, 4: 190}`.
 
+## Tests
+
+```sh
+bash tests/test_project.sh             # project.sh
+python3 -m unittest discover tests     # the Python scripts
+```
+
+The tests need only bash and Python's standard library, and none of them
+runs the application or writes outputs. `tests/test_project.sh` checks
+that `project.sh` rejects bad arguments with its usage and exit code 1.
+`tests/test_common.py` checks that `filter_data()` gives each filter
+setting the type LibreOffice expects, including booleans, which Python
+also counts as integers.
+
+To lint the code with [ShellCheck](https://www.shellcheck.net/) and
+[Ruff](https://docs.astral.sh/ruff/):
+
+```sh
+shellcheck project.sh tests/*.sh
+ruff check .
+```
+
 ## Gallery
 
 `project-management-offshore-wind-farm-renewable-energy-hse-dashboard-onepage`,
