@@ -28,11 +28,15 @@ For example:
 
 ```sh
 ./project.sh job-hunting-nika-creative-technologist-cv-onepage pdf
+./project.sh job-hunting-nika-creative-technologist-cv-onepage pdf clean
 ```
 
-Outputs go to `build/<project>.<format>`, and `odf` outputs to
+`<project>` is the name of a folder in `scripts/`, and the script can be
+run from any directory. Outputs go to `build/<project>.<format>`, except
+`docbook` and `wordxml` to `build/<project>.<format>.xml` and `odf` to
 `odf/<project>.odt`. Existing outputs are skipped, so clean them to
-rebuild. Without arguments, `./project.sh` lists the formats and projects.
+rebuild. Without arguments, `./project.sh` prints the usage with every
+format and the first ten projects; `ls scripts` lists them all.
 
 ### Formats
 
@@ -183,6 +187,36 @@ and `chevrons`. Table cells can be colored by `badges`, such as RAG status
 or RACI letters. A figure's `height` can depend on the length, e.g.
 `{1: 150, 2: 170, 4: 190}`.
 
+## Gallery
+
+`project-management-offshore-wind-farm-renewable-energy-hse-dashboard-onepage`,
+exported with:
+
+```sh
+./project.sh project-management-offshore-wind-farm-renewable-energy-hse-dashboard-onepage pdf
+```
+
+Click the page to open the PDF:
+
+[![HSE dashboard of the offshore wind farm project](gallery/project-management-offshore-wind-farm-renewable-energy-hse-dashboard-onepage.png)](gallery/project-management-offshore-wind-farm-renewable-energy-hse-dashboard-onepage.pdf)
+
 ## License
 
-MIT, see [LICENSE](LICENSE).
+The scripts are licensed under the MIT license, see [LICENSE](LICENSE).
+The files in `gallery/` were made with them and are under the same
+license. The businesses, people and projects in the documents are
+fictional.
+
+The scripts drive software and use fonts that are not part of this
+repository and have licenses of their own:
+
+- [LibreOffice](https://www.libreoffice.org/about-us/licenses/) is free
+  software under the Mozilla Public License, version 2.0, with parts
+  also available under the GNU LGPL, version 3 or later. The scripts only
+  run it as a separate program. Documents you convert with LibreOffice
+  are yours, and its license does not apply to them.
+- The fonts are free fonts, mostly under the SIL Open Font License
+  (Lato, Liberation, Quicksand), the GUST Font License (TeX Gyre), the
+  Bitstream Vera license (DejaVu) and the GNU AGPL with a font exception
+  (URW base 35). All of them allow embedding subsets in PDFs and other
+  documents, as LibreOffice does.
