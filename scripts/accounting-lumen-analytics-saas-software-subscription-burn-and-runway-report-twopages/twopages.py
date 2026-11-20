@@ -2,7 +2,7 @@
 
 Burn by team, runway scenarios and the levers.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

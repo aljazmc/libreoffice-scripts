@@ -2,7 +2,7 @@
 
 The return, the bond account, the losses and the year so far.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

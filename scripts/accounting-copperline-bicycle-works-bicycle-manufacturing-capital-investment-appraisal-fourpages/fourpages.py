@@ -3,7 +3,7 @@
 The appraisal, the options, the sensitivities, the risks and the
 recommendation.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

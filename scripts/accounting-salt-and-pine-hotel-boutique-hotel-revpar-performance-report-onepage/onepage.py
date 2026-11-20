@@ -2,7 +2,7 @@
 
 Occupancy, rate and revenue per room against the competitors.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

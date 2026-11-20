@@ -2,7 +2,7 @@
 
 The aging by payer, the oldest balances and the trend.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 The year's income statement split by web shop, marketplaces and wholesale.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

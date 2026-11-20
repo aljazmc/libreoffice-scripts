@@ -2,7 +2,7 @@
 
 The pack: profit and loss, balance sheet, cash, dentists and commentary.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

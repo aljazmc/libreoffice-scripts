@@ -2,7 +2,7 @@
 
 The bill of materials, labour and overhead, with the margin.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

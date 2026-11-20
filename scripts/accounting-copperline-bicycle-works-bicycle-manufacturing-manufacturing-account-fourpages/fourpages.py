@@ -2,7 +2,7 @@
 
 The accounts, the cost per frame, the overheads and the notes.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

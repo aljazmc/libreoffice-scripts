@@ -2,7 +2,7 @@
 
 Who owes the practice money, and for how long.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

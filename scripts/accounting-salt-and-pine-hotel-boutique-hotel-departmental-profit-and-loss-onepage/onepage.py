@@ -2,7 +2,7 @@
 
 August by department: rooms, food and drink, spa.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

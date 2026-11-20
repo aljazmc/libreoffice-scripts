@@ -2,7 +2,7 @@
 
 The costs of the vintage, how they are shared and the cost per bottle.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

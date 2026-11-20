@@ -2,7 +2,7 @@
 
 September at a glance: income, profit, cash and the chairs.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

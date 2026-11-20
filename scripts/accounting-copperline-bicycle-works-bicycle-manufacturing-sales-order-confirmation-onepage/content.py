@@ -30,7 +30,7 @@ CARRIAGE = 240.00
 NET = round(GOODS - DISC + CARRIAGE, 2)
 TAX = round(NET * VAT, 2)
 TOTAL = round(NET + TAX, 2)
-BIKES = sum(l[3] for l in LINES)
+BIKES = sum(line[3] for line in LINES)
 
 DOCUMENT = {
     "title": "Sales Order Confirmation",

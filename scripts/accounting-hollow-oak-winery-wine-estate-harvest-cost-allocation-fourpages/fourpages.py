@@ -2,7 +2,7 @@
 
 The allocation, the drivers, the blocks, the margins and the method.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

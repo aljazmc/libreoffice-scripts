@@ -2,7 +2,7 @@
 
 The statement with restricted and unrestricted funds side by side.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

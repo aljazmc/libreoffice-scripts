@@ -2,7 +2,7 @@
 
 The return, workings, overseas sales, adjustments and the checks.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

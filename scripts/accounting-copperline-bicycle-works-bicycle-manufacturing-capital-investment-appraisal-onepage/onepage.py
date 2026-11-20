@@ -2,7 +2,7 @@
 
 Should we buy the robotic welding cell? The case on one page.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 The statement with the reconciliation from net loss to operating cash.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

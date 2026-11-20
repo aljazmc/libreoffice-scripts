@@ -2,7 +2,7 @@
 
 Landscape. The budget by month and department, with the drivers.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

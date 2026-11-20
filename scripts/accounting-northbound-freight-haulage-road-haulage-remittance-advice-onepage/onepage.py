@@ -2,7 +2,7 @@
 
 The invoices paid to the tyre supplier this run.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

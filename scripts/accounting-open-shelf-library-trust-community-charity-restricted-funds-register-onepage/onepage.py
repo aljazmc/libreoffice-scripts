@@ -2,7 +2,7 @@
 
 Every restricted fund, what came in, what was spent and what is left.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

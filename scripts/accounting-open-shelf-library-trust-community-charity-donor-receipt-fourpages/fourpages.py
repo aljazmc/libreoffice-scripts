@@ -2,7 +2,7 @@
 
 The receipt, the gifts, the Gift Aid, the impact and the trust's finances.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

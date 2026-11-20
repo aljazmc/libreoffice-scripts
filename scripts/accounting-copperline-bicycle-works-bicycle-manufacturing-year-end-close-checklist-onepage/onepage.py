@@ -2,7 +2,7 @@
 
 Every task to close the 2027 books, ticked or not.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

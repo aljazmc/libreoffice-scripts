@@ -2,7 +2,7 @@
 
 The credit note with the returns inspection.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

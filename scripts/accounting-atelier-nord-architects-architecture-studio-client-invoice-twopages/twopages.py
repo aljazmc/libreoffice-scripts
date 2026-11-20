@@ -2,7 +2,7 @@
 
 The invoice with the fee account to date.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

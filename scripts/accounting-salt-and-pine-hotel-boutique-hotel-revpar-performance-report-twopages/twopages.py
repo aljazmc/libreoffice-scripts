@@ -2,7 +2,7 @@
 
 RevPAR by month, segment and channel, against the comp set.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

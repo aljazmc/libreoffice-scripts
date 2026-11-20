@@ -2,7 +2,7 @@
 
 The claim, the full donor schedule, the declarations check and the history.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

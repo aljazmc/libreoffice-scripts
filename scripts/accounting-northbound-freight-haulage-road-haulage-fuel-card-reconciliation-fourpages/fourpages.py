@@ -2,7 +2,7 @@
 
 The reconciliation, every exception, the mpg by truck and the sign-off.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

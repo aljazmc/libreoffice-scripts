@@ -2,7 +2,7 @@
 
 The year on one page: the statement with last year beside it.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 Landscape. The stock at the year end, at cost and at net realisable value.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

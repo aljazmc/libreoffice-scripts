@@ -2,7 +2,7 @@
 
 How fast the cash goes and how long it lasts, at a glance.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

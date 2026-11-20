@@ -2,7 +2,7 @@
 
 Utilisation, recovery, the lost hours and the plan for next quarter.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

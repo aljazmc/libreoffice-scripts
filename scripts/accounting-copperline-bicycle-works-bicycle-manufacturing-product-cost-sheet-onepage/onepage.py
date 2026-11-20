@@ -2,7 +2,7 @@
 
 What it costs to build one Ridgeline gravel bike.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

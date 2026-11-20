@@ -62,16 +62,16 @@ DOCUMENT = {
          + [{"cells": ["Adjustments for non-cash items", "", ""],
              "style": "muted", "min_pages": 2}]
          + rows(OPERATING[1:3], 2)
-         + [{"cells": ["Non-cash items", k(sum(l[1] for l in
+         + [{"cells": ["Non-cash items", k(sum(line[1] for line in
                                               OPERATING[1:3])),
-                       k(sum(l[2] for l in OPERATING[1:3]))],
+                       k(sum(line[2] for line in OPERATING[1:3]))],
              "style": "indent", "max_pages": 1},
             {"cells": ["Changes in working capital", "", ""],
              "style": "muted", "min_pages": 2}]
          + rows(OPERATING[3:], 2)
-         + [{"cells": ["Working capital", k(sum(l[1] for l in
+         + [{"cells": ["Working capital", k(sum(line[1] for line in
                                                OPERATING[3:])),
-                       k(sum(l[2] for l in OPERATING[3:]))],
+                       k(sum(line[2] for line in OPERATING[3:]))],
              "style": "indent", "max_pages": 1},
             {"cells": ["Net cash used in operating activities",
                        k(NET_OP[0]), k(NET_OP[1])], "style": "subtotal"},

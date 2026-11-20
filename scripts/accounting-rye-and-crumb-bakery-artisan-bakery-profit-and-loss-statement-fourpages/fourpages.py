@@ -2,7 +2,7 @@
 
 The statement, its notes, the monthly trend and the costs line by line.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

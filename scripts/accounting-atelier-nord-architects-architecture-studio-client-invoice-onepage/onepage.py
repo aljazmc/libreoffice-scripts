@@ -2,7 +2,7 @@
 
 A fee invoice for stage 4 of a library extension.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

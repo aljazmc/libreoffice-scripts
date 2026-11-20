@@ -2,7 +2,7 @@
 
 Income and spending of the trust for 2026/27 by fund.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

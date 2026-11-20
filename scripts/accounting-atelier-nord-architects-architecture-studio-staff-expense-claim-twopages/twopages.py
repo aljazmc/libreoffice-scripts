@@ -2,7 +2,7 @@
 
 The claim with the mileage log and the approvals.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

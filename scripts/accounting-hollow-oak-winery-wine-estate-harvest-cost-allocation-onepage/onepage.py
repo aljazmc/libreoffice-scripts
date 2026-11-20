@@ -2,7 +2,7 @@
 
 What a bottle of each wine cost to make in the 2026 vintage.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

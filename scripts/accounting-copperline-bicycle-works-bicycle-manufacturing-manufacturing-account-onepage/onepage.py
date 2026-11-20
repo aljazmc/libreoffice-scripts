@@ -2,7 +2,7 @@
 
 The cost of the bicycles made in 2027, from raw steel to finished frame.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

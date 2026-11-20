@@ -2,7 +2,7 @@
 
 A credit note to a wholesale customer for returned jackets.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

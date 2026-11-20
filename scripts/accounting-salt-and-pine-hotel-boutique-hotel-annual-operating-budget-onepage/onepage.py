@@ -2,7 +2,7 @@
 
 Landscape. 2028 month by month: revenue, costs and profit.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

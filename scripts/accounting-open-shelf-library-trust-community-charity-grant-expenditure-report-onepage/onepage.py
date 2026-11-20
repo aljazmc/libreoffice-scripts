@@ -2,7 +2,7 @@
 
 How the Reading Rooms grant was spent in year two.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

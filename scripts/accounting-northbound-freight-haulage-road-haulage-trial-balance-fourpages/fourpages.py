@@ -3,7 +3,7 @@
 The trial balance, the adjusting journals, the control accounts and the
 checks.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

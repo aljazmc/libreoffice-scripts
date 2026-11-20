@@ -2,7 +2,7 @@
 
 The monthly duty return for wine released from the bonded cellar.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

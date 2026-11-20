@@ -2,7 +2,7 @@
 
 The order with the build slots and payment schedule.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 The return with the workings behind each box.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

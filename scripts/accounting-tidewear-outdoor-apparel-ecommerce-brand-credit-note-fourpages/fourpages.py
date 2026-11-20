@@ -3,7 +3,7 @@
 The credit note, the inspection, the account after credit and the returns
 policy.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

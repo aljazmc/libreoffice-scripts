@@ -2,7 +2,7 @@
 
 The quarterly claim of tax back on donations.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

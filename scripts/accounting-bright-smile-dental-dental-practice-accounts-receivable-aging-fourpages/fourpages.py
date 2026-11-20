@@ -3,7 +3,7 @@
 The aging, every overdue account, the payers, the trend and the collection
 plan.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

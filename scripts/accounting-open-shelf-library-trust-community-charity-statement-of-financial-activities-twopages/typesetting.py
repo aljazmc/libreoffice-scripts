@@ -662,7 +662,7 @@ def bar_chart(canvas, chart, x, y, w, h):
                     if value is None:
                         continue
                     top_y = middle - thickness / 2 + i * band
-                    x0, x1 = sorted((at(0 if low < 0 else low), at(value)))
+                    x0, x1 = sorted((at(max(low, 0)), at(value)))
                     canvas.rect(x0, top_y, x1 - x0, band * 0.9,
                                 value_color(s, i, j), radius=theme.radius)
                     if show and value < 0:
@@ -1430,9 +1430,9 @@ def sankey(canvas, chart, x, y, w, h):
     nodes = {node["id"]: dict(node) for node in chart["nodes"]}
     order = [node["id"] for node in chart["nodes"]]
     for node in nodes.values():
-        node["in"] = sum(l[2] for l in chart["links"] if l[1] == node["id"])
-        node["out"] = sum(l[2] for l in chart["links"]
-                          if l[0] == node["id"])
+        node["in"] = sum(link[2] for link in chart["links"] if link[1] == node["id"])
+        node["out"] = sum(link[2] for link in chart["links"]
+                          if link[0] == node["id"])
         node["value"] = node.get("value", max(node["in"], node["out"]))
     columns = max(node["col"] for node in nodes.values()) + 1
     size = chart.get("size", 7)

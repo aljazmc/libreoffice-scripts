@@ -2,7 +2,7 @@
 
 How many loaves a day the new shop must sell to break even.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

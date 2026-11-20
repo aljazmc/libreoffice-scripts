@@ -2,7 +2,7 @@
 
 Revenue and margin by treatment, chair hour and dentist.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

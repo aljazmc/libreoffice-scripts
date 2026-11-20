@@ -2,7 +2,7 @@
 
 The balance sheet, the notes, the ratios and the changes in equity.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 The statement with the profit sharing and the drawings.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

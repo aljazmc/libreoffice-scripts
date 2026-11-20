@@ -2,7 +2,7 @@
 
 The statement, each department, the costs, the ratios and the commentary.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

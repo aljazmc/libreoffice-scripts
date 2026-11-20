@@ -2,7 +2,7 @@
 
 The payslip with the year to date and the employer's costs.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

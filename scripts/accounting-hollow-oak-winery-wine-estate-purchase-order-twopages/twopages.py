@@ -2,7 +2,7 @@
 
 The order with the delivery schedule and the approvals.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

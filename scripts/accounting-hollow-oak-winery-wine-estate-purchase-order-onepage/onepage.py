@@ -2,7 +2,7 @@
 
 An order for French oak barrels, priced and approved.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

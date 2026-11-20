@@ -2,7 +2,7 @@
 
 A wholesale invoice to a café: the deliveries of October and what is due.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 A dealer's order for 40 bicycles, confirmed with the deposit due.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

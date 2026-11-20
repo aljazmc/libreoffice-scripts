@@ -2,7 +2,7 @@
 
 Landscape. The forecast week by week, with the receipts and the payments.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

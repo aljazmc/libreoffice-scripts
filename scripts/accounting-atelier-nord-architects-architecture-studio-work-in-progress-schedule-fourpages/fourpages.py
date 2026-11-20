@@ -2,7 +2,7 @@
 
 Landscape. The schedule, the provisions, the aging and the billing plan.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

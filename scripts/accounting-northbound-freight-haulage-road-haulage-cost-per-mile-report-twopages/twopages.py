@@ -2,7 +2,7 @@
 
 Cost per mile by truck, by cost type and by customer.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

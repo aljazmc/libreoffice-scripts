@@ -209,6 +209,9 @@ shellcheck project.sh tests/*.sh
 ruff check .
 ```
 
+GitHub Actions runs both on every push and pull request, see
+[.github/workflows/lint.yml](.github/workflows/lint.yml).
+
 ## Gallery
 
 `project-management-offshore-wind-farm-renewable-energy-hse-dashboard-onepage`,

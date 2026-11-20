@@ -2,7 +2,7 @@
 
 The break-even with the costs, the margins and the sensitivity.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

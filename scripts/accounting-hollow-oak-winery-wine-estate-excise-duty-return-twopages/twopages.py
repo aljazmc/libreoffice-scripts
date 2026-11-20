@@ -2,7 +2,7 @@
 
 The return with the bond movements and the duty calculation.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

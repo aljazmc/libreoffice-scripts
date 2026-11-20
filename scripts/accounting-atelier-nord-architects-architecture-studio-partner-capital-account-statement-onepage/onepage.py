@@ -2,7 +2,7 @@
 
 One partner's share of the year's profit and her capital account.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

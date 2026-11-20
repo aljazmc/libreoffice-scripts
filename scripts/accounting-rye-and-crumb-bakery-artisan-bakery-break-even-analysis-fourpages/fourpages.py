@@ -2,7 +2,7 @@
 
 The break-even, the product mix, the scenarios and the recommendation.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

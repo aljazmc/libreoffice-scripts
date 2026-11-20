@@ -2,7 +2,7 @@
 
 The claim in one page: the projects, the qualifying costs and the credit.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

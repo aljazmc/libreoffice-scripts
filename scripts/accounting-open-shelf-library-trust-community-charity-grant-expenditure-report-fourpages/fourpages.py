@@ -2,7 +2,7 @@
 
 Spending, variances, outcomes, stories and the plan for year three.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

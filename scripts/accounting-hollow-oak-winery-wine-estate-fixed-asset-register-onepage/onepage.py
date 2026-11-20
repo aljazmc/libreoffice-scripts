@@ -2,7 +2,7 @@
 
 Landscape. Every asset of the estate, its cost and its book value.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

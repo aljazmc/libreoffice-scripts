@@ -2,7 +2,7 @@
 
 Which treatments earn the practice its money.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

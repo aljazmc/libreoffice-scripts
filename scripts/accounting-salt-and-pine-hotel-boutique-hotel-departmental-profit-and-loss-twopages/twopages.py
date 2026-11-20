@@ -2,7 +2,7 @@
 
 The departmental statement with the undistributed costs.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 The month's profit and loss, balance sheet and key numbers.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

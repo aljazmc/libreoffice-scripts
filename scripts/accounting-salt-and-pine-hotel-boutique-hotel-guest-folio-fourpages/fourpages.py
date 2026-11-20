@@ -2,7 +2,7 @@
 
 The folio, the charges, the payments, the taxes and the house notes.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

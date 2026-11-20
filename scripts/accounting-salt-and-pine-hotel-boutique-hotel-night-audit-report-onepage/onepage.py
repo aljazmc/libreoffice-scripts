@@ -2,7 +2,7 @@
 
 Landscape. The day closed at 02:00: rooms, revenue and payments.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

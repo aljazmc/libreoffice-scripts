@@ -2,7 +2,7 @@
 
 The manufacturing account with the trading account beneath it.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

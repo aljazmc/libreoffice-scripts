@@ -2,7 +2,7 @@
 
 The reconciliation with the unpresented items listed.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

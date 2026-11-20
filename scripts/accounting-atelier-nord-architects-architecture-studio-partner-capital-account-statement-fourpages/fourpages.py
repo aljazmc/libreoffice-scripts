@@ -3,7 +3,7 @@
 The statement, the profit sharing rules, the drawings, tax reserve and
 history.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

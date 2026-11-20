@@ -2,7 +2,7 @@
 
 Landscape. The loan for six new tractor units, payment by payment.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

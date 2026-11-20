@@ -2,7 +2,7 @@
 
 The trial balance by account group, with the journals.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

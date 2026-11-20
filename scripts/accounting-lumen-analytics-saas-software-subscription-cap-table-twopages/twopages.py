@@ -2,7 +2,7 @@
 
 Landscape. The cap table by round, the option pool and the ownership chart.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

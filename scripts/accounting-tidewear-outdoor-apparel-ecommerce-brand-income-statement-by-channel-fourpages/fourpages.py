@@ -2,7 +2,7 @@
 
 The statement, the channel costs, the trend and the allocation notes.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

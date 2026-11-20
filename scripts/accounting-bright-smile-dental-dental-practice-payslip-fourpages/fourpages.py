@@ -3,7 +3,7 @@
 The payslip, the year to date, the pension, the tax code and the pay
 calendar.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

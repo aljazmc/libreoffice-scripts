@@ -2,7 +2,7 @@
 
 The receipt with every gift and what it paid for.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

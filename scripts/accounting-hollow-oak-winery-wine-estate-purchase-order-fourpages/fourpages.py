@@ -2,7 +2,7 @@
 
 The order, the specification, the quotes compared and the terms.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

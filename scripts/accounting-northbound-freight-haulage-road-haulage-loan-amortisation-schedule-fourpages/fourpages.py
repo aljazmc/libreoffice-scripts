@@ -2,7 +2,7 @@
 
 Landscape. The full schedule, the terms, covenants and early repayment.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

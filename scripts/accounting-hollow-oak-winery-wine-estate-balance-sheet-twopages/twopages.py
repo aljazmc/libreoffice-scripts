@@ -2,7 +2,7 @@
 
 The balance sheet with the notes on stock, vines and the loan.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

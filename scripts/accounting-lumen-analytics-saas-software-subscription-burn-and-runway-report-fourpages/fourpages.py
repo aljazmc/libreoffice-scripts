@@ -2,7 +2,7 @@
 
 Burn, runway, hiring plan, scenarios and the decisions for the board.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 Landscape. The valuation, the SKUs, the aging, the provisions and the count.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

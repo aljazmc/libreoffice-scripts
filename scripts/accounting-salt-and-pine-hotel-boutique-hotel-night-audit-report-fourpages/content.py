@@ -50,8 +50,8 @@ DOCUMENT = {
                      ("Net revenue", 1.1, "end"),
                      ("Budget", 1.1, "end"), ("Same day last year", 1.2,
                                               "end")],
-         "rows": [[o, str(c) if c else "—", gbp(r), gbp(b), gbp(l)]
-                  for (o, c, r), b, l in zip(
+         "rows": [[o, str(c) if c else "—", gbp(r), gbp(b), gbp(last)]
+                  for (o, c, r), b, last in zip(
                       OUTLETS, [11_400, 5_100, 1_200, 300, 1_400, 150],
                       [10_620, 4_388, 1_190, 286, 1_204, 162])]
          + [{"cells": ["Total", "", gbp(REVENUE), gbp(19_550),

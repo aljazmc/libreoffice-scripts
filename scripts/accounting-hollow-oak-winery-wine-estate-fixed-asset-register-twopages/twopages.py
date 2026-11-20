@@ -2,7 +2,7 @@
 
 Landscape. The register by class with the depreciation of the year.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

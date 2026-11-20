@@ -3,7 +3,7 @@
 Where the cash came from and went in 2026, by operating, investing and
 financing.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

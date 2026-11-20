@@ -2,7 +2,7 @@
 
 Landscape. The audit, the ledgers, the exceptions and tomorrow's arrivals.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

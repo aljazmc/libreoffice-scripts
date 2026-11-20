@@ -2,7 +2,7 @@
 
 The folio with every charge, night by night.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

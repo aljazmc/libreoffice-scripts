@@ -3,7 +3,7 @@
 Saturday's cash-up sheet: the float, the takings by tender and the
 difference.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

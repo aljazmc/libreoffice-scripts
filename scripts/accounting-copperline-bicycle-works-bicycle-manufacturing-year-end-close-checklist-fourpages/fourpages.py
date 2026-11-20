@@ -2,7 +2,7 @@
 
 The checklist, the timetable, the sign-offs and the audit requests.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

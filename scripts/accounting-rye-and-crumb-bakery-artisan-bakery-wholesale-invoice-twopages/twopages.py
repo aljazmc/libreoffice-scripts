@@ -2,7 +2,7 @@
 
 The invoice with every delivery day and the payment details.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

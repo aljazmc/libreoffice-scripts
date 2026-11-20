@@ -2,7 +2,7 @@
 
 Utilisation by person, project and week.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 The remittance with deductions and the account after payment.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 Landscape. Work in progress by project, with fees, costs and billing.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

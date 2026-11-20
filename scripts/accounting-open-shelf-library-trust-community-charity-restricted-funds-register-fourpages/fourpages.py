@@ -2,7 +2,7 @@
 
 The register, each fund's movements, the deadlines and the transfers.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

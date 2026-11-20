@@ -2,7 +2,7 @@
 
 The cash-up with the coin count, the card terminals and the banking.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 Landscape. The register, the policies, additions, disposals and the vines.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

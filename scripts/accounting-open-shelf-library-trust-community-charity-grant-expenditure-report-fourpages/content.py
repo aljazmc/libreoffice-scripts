@@ -18,8 +18,8 @@ LINES = [("Reading room coordinators, 2 × 0.8 FTE", 58_000, 56_000),
 CARRIED = 18_400
 RECEIVED = 120_000
 
-BUDGET = sum(l[1] for l in LINES)
-ACTUAL = sum(l[2] for l in LINES)
+BUDGET = sum(line[1] for line in LINES)
+ACTUAL = sum(line[2] for line in LINES)
 
 
 def gbp(value):

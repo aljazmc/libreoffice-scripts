@@ -130,7 +130,7 @@ def export(document, filepath, filter_name, options=None, **settings):
                 target, "--outdir", outdir, source]
 
         # soffice exits with 0 even when a conversion fails, so check the file
-        result = subprocess.run(args, capture_output=True)
+        result = subprocess.run(args, capture_output=True, check=False)
         converted = os.path.join(outdir, "document." + extension)
         if result.returncode != 0 or not os.path.isfile(converted):
             sys.exit(f"libreoffice export failed for {filepath}:\n"

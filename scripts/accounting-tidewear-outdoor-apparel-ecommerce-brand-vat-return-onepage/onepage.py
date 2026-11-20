@@ -2,7 +2,7 @@
 
 The quarter's VAT return, box by box.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {

@@ -2,7 +2,7 @@
 
 The order, the schedules, the service levels and the data terms.
 """
-from content import DOCUMENT, BUSINESS
+from content import BUSINESS, DOCUMENT
 from typesetting import typeset
 
 DESIGN = {
