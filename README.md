@@ -3,7 +3,7 @@
 Python scripts that write documents as flat OpenDocument XML, and a shell
 script that converts them with LibreOffice into PDF, Word, images and about
 thirty other formats. Each document is a self-contained project in
-`scripts/` with AI-generated content.
+`scripts/`.
 
 ## Requirements
 
