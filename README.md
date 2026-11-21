@@ -65,7 +65,10 @@ project.sh ──> scripts/export<format>.py ──> scripts/common.py
   (or `scripts/saveodf.py`) with `PROJECT=<project>`.
 - `scripts/typesetting/` holds the typesetters the projects share, one
   per family: `accounting.py`, `job_hunting.py` and
-  `project_management.py`.
+  `project_management.py`. Accounting and project management both use
+  `report.py`; the project management one passes it the few settings
+  that keep its documents looking as they did. `job_hunting.py` takes
+  only the shared XML and text helpers from `report.py`.
 - `scripts/common.py` imports the project, calls its function and runs
   LibreOffice with a throwaway profile, so it never touches a running
   LibreOffice and conversions can run in parallel.
@@ -110,8 +113,9 @@ content and design, cut to different lengths.
 
 **Design.** The `DESIGN` dict sets colors, fonts, density, margins and the
 style of the header and headings, and where they exist, the orientation,
-tables and charts. See `stylesheet()` (and `Theme`) in the family's
-typesetter in `scripts/typesetting/` for every option.
+tables and charts. See `stylesheet()` (and `Theme`) in
+`scripts/typesetting/report.py`, or in `job_hunting.py` for job hunting,
+for every option.
 
 There are three families of projects, each with ten subjects in three
 lengths.
@@ -137,8 +141,8 @@ schedule, and an analysis, and every document has its own design.
 | tidewear-outdoor-apparel | ecommerce-brand | income-statement-by-channel, credit-note, vat-return, inventory-valuation-report, unit-economics-report |
 
 Figures are computed in `content.py`, so statements add up and related
-documents agree. The typesetter is the project management one (see below)
-with additions for financial statements: row styles (`section`, `indent`,
+documents agree. The typesetter is the same as the project management one
+(see below), with additions for financial statements: row styles (`section`, `indent`,
 `subtotal`, `total` with a double rule, `highlight`, `muted`), per-row
 `min_pages` and `max_pages`, `whole` tables that are never split,
 borderless tables (`look: "plain"`) for addresses and signatures, and two

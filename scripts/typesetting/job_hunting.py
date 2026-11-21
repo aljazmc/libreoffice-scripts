@@ -17,15 +17,17 @@ bullets: see stylesheet() for what it can say.
 import re
 import xml.etree.ElementTree as ET
 
-NAMESPACES = {
-    "office": "urn:oasis:names:tc:opendocument:xmlns:office:1.0",
-    "style": "urn:oasis:names:tc:opendocument:xmlns:style:1.0",
-    "text": "urn:oasis:names:tc:opendocument:xmlns:text:1.0",
-    "fo": "urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0",
-    "svg": "urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0",
-    "dc": "http://purl.org/dc/elements/1.1/",
-    "draw": "urn:oasis:names:tc:opendocument:xmlns:drawing:1.0",
-}
+# what every typesetter writes and measures the same way
+from typesetting.report import (
+    FOOTER_HEIGHT,
+    MONOSPACED,
+    element,
+    mix,
+    pt,
+    qualified,
+    roman,
+    runs,
+)
 
 # the average advance of a character of English prose, spaces included, in
 # ems, of the regular and the bold face
@@ -47,7 +49,6 @@ FONTS = {
     "Liberation Mono": (0.600, 0.600),
     "Noto Sans Mono": (0.600, 0.600),
 }
-MONOSPACED = {"DejaVu Sans Mono", "Liberation Mono", "Noto Sans Mono"}
 
 # A4 in points
 PAGE_WIDTH = 595.28
@@ -55,7 +56,6 @@ PAGE_HEIGHT = 841.89
 MARGIN_X = 56.7
 MARGIN_TOP = 48
 MARGIN_BOTTOM = 36
-FOOTER_HEIGHT = 12
 FOOTER_SPACING = 12
 TEXT_HEIGHT = (PAGE_HEIGHT - MARGIN_TOP - MARGIN_BOTTOM - FOOTER_HEIGHT
                - FOOTER_SPACING)
@@ -64,35 +64,6 @@ TEXT_HEIGHT = (PAGE_HEIGHT - MARGIN_TOP - MARGIN_BOTTOM - FOOTER_HEIGHT
 # share of the pages kept free for the errors of the estimate
 BREAK_LOSS = 40
 SAFETY = 0.04
-
-MARKUP = re.compile(r"(\*\*.+?\*\*|\*.+?\*)")
-
-for prefix, uri in NAMESPACES.items():
-    ET.register_namespace(prefix, uri)
-
-
-def qualified(name):
-    prefix, local = name.split(":")
-    return f"{{{NAMESPACES[prefix]}}}{local}"
-
-
-def element(parent, tag, **attributes):
-    """Attribute names use "__" for ":" and "_" for "-", e.g.
-    fo__font_size="10pt" sets fo:font-size."""
-    return ET.SubElement(parent, qualified(tag),
-                         {qualified(key.replace("__", ":").replace("_", "-")):
-                          str(value) for key, value in attributes.items()})
-
-
-def pt(value):
-    return f"{value:g}pt"
-
-
-def mix(start, end, t):
-    """The color t of the way from start to end."""
-    channels = [round(a + (b - a) * t) for a, b in
-                zip(bytes.fromhex(start[1:]), bytes.fromhex(end[1:]))]
-    return "#" + bytes(channels).hex()
 
 
 # styles
@@ -302,18 +273,6 @@ def text_styles(parent, design):
 # None, a text style, "tab" for a tab to the right tab stop or "indent" for
 # the tab that ends a bullet
 
-def runs(text, style=None):
-    """**bold** in the text becomes strong and *italic* emphasis."""
-    content = []
-    for part in MARKUP.split(text):
-        if part.startswith("**") and part.endswith("**"):
-            content.append((part[2:-2], "strong"))
-        elif part.startswith("*") and part.endswith("*") and len(part) > 2:
-            content.append((part[1:-1], "emphasis"))
-        elif part:
-            content.append((part, style))
-    return content
-
 
 def lines(spec, content):
     """Wrap the words of the runs into the width of the paragraph."""
@@ -376,15 +335,6 @@ class Item:
         while item:
             yield item
             item = item.parent
-
-
-def roman(number):
-    numerals = [(10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")]
-    result = ""
-    for value, numeral in numerals:
-        while number >= value:
-            result, number = result + numeral, number - value
-    return result
 
 
 def bullet(text, design):
