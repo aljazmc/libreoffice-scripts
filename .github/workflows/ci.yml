@@ -1,4 +1,4 @@
-name: lint
+name: ci
 
 on:
   push:
@@ -23,3 +23,14 @@ jobs:
       - uses: astral-sh/ruff-action@v3
         with:
           args: check --output-format=github
+
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      # neither suite needs LibreOffice: they check arguments and estimates
+      - run: bash tests/test_project.sh
+      - run: python3 -m unittest discover tests -v

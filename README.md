@@ -199,7 +199,10 @@ runs the application or writes outputs. `tests/test_project.sh` checks
 that `project.sh` rejects bad arguments with its usage and exit code 1.
 `tests/test_common.py` checks that `filter_data()` gives each filter
 setting the type LibreOffice expects, including booleans, which Python
-also counts as integers.
+also counts as integers. `tests/test_pages.py` checks that every project
+fills the number of pages its name promises, by its typesetter's own
+estimate; it takes about fifteen seconds and needs no LibreOffice, so a
+PDF can still differ when the estimate is wrong.
 
 To lint the code with [ShellCheck](https://www.shellcheck.net/) and
 [Ruff](https://docs.astral.sh/ruff/):
@@ -209,8 +212,8 @@ shellcheck project.sh tests/*.sh
 ruff check .
 ```
 
-GitHub Actions runs both on every push and pull request, see
-[.github/workflows/lint.yml](.github/workflows/lint.yml).
+GitHub Actions runs both, and the tests, on every push and pull request,
+see [.github/workflows/ci.yml](.github/workflows/ci.yml).
 
 ## Gallery
 
