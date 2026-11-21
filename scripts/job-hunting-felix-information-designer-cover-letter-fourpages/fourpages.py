@@ -3,7 +3,7 @@
 The long letter, with a first sketch of a campaign.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ff2a00",

@@ -4,7 +4,7 @@ The WBS in full: the tree, the dictionary, owners, effort, interfaces and
 deliverables.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#c8102e",

@@ -3,7 +3,7 @@
 The balance sheet with the notes on stock, vines and the loan.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

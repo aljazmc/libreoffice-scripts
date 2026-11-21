@@ -3,7 +3,7 @@
 The costs of the vintage, how they are shared and the cost per bottle.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

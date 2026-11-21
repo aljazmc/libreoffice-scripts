@@ -3,7 +3,7 @@
 The change orders with their cause, value, time impact and decision.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

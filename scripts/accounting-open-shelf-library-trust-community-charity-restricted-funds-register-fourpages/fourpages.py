@@ -3,7 +3,7 @@
 The register, each fund's movements, the deadlines and the transfers.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",

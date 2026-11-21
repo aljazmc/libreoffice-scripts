@@ -4,7 +4,7 @@ The change orders in full, the trend by month, the causes and the lessons
 for the contract.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

@@ -3,7 +3,7 @@
 One project, its users and its maintainer, on one page.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#859900",

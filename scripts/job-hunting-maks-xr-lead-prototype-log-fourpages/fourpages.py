@@ -3,7 +3,7 @@
 Every prototype since 2016, with the ones that killed the company.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#22d3ee",

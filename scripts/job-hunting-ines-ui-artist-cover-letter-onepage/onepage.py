@@ -3,7 +3,7 @@
 A short letter to an indie studio, in arcade colours.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ffcc00",

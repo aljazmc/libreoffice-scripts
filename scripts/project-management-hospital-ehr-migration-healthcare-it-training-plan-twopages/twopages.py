@@ -3,7 +3,7 @@
 The training by role and week, with the courses and the super users.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

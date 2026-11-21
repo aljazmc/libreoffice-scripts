@@ -3,7 +3,7 @@
 The folio with every charge, night by night.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

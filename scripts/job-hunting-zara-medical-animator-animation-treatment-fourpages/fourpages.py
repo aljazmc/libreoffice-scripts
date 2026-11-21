@@ -3,7 +3,7 @@
 The full treatment: scenes, accuracy notes, style frames and schedule.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#111111",

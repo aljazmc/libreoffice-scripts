@@ -4,7 +4,7 @@ Landscape. The budget, the drivers, the payroll, the capital plan and the
 risks.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

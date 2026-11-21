@@ -3,7 +3,7 @@
 The appraisal: cash flows, NPV, IRR and payback.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#e08a4b",

@@ -3,7 +3,7 @@
 Mass and power against the limits, with the margin left.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#c8102e",

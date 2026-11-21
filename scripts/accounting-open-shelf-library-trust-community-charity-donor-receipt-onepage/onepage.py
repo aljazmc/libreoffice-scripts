@@ -3,7 +3,7 @@
 A receipt and thank-you for a donor's gifts in 2026/27.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",

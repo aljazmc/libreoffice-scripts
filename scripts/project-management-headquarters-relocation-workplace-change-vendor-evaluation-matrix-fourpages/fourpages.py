@@ -4,7 +4,7 @@ The evaluation in full: criteria, scores, prices, references, risks and the
 recommendation.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#b5651d",

@@ -4,7 +4,7 @@ Gate 3 in full: the criteria, evidence, the panel, the conditions and the
 plan to Gate 4.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#00707a",

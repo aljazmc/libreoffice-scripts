@@ -3,7 +3,7 @@
 Two pages cut and pasted from twenty-five years of drawing.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#e63946",

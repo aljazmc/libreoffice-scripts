@@ -3,7 +3,7 @@
 Period 9 in one page: CPI, SPI, the S-curve and the estimate at completion.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

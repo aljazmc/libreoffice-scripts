@@ -3,7 +3,7 @@
 The statement, the reconciliation, the quarters and the notes.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#4f46e5",

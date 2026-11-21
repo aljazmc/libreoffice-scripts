@@ -3,7 +3,7 @@
 The year on one page: the statement with last year beside it.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

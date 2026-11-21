@@ -3,7 +3,7 @@
 The long letter, with a first study of the studio's work.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7dd3fc",

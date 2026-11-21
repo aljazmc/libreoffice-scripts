@@ -3,7 +3,7 @@
 A short letter, white on black, like an end credit.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#fbbf24",

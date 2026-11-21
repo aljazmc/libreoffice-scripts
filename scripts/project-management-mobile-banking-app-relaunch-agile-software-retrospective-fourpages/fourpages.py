@@ -4,7 +4,7 @@ The retro in full: board, mood, the timeline of the sprint, the themes and
 the follow-up of old actions.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#6d28d9",

@@ -3,7 +3,7 @@
 Landscape. The four move waves, weekend by weekend, on one page.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#b5651d",

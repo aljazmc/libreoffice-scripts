@@ -4,7 +4,7 @@ Landscape. The runbook in full: timeline, steps, owners, checkpoints,
 rollback and the command centre.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

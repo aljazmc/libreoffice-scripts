@@ -3,7 +3,7 @@
 The performance, the segments, the pace, the pricing and the plan.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#d4b37a",

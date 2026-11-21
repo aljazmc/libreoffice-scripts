@@ -4,7 +4,7 @@ The consents in full: timelines, conditions, stakeholders, surveys and the
 discharge plan.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#00707a",

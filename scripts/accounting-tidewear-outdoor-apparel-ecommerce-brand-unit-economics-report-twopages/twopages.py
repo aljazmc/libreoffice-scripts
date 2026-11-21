@@ -3,7 +3,7 @@
 Contribution per order, payback and lifetime value.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#e4572e",

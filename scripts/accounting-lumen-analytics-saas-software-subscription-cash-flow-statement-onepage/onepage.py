@@ -4,7 +4,7 @@ Where the cash came from and went in 2026, by operating, investing and
 financing.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#4f46e5",

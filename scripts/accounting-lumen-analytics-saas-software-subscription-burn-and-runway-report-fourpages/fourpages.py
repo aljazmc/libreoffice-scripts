@@ -3,7 +3,7 @@
 Burn, runway, hiring plan, scenarios and the decisions for the board.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#818cf8",

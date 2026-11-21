@@ -3,7 +3,7 @@
 Landscape. The waves with teams, crates, IT and the checkpoints.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#b5651d",

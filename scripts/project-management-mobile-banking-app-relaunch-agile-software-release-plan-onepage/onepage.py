@@ -4,7 +4,7 @@ Release 5.0 on one page: the train, the feature flags and the rollout
 stages.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#6d28d9",

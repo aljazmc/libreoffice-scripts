@@ -4,7 +4,7 @@ Period 9 with the S-curve, the variance by work package and the bridge from
 budget to forecast.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

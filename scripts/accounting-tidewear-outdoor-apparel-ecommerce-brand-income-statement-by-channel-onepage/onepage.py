@@ -3,7 +3,7 @@
 The year's income statement split by web shop, marketplaces and wholesale.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#e4572e",

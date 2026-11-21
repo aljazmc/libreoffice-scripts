@@ -24,7 +24,9 @@ require() {
 
 projects() {
 
-    find scripts -mindepth 1 -maxdepth 1 -type d ! -name __pycache__ -printf '%f\n' | sort
+    # typesetting/ holds the shared typesetters, not a project
+    find scripts -mindepth 1 -maxdepth 1 -type d ! -name __pycache__ \
+        ! -name typesetting -printf '%f\n' | sort
 
 }
 
@@ -132,7 +134,7 @@ valid_format "$format" || usage
 
 if [ "$1" = "all" ]; then
     mapfile -t targets < <(projects)
-elif [ -d "scripts/$1" ]; then
+elif projects | grep -Fxq -- "$1"; then
     targets=("$1")
 else
     usage

@@ -3,7 +3,7 @@
 The break-even, the product mix, the scenarios and the recommendation.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

@@ -3,7 +3,7 @@
 Two pages in movements, rests included.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7c2d12",

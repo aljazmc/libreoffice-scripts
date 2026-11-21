@@ -3,7 +3,7 @@
 The statement, the notes on income, spending, staff and funds.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",

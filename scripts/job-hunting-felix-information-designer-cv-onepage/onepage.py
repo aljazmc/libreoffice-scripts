@@ -3,7 +3,7 @@
 A Swiss poster that happens to be a CV.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ff2a00",

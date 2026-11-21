@@ -3,7 +3,7 @@
 The evaluation with visits, dwell times, ratings and what visitors said.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7a1f3d",

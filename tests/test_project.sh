@@ -26,6 +26,7 @@ expect_usage() {
 
 expect_usage
 expect_usage no-such-project all
+expect_usage typesetting pdf
 expect_usage all no-such-format
 expect_usage all png extra arguments
 

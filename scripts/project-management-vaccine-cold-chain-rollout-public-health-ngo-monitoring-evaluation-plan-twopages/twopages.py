@@ -3,7 +3,7 @@
 The indicators, the data flow, the calendar and the evaluation questions.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#0072bc",

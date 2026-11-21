@@ -3,7 +3,7 @@
 The burndown with the matrix, the retired risks and the top open ones.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#c8102e",

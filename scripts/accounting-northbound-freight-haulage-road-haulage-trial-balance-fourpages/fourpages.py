@@ -4,7 +4,7 @@ The trial balance, the adjusting journals, the control accounts and the
 checks.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1c1c1c",

@@ -3,7 +3,7 @@
 The two-minute reel explained shot by shot, first shot only.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#fde68a",

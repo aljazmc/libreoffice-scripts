@@ -3,7 +3,7 @@
 The full log, from the first <div> to the first job offer.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#000000",

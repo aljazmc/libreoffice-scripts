@@ -3,7 +3,7 @@
 Two sheets: the games years, the layoffs and the turn to architecture.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7dd3fc",

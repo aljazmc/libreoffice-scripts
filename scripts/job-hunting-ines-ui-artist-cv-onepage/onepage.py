@@ -3,7 +3,7 @@
 A CV as a title screen: one level, no continues needed.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ffcc00",

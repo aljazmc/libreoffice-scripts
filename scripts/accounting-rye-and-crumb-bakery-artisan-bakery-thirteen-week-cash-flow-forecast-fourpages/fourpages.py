@@ -3,7 +3,7 @@
 Landscape. The forecast, its assumptions, the scenarios and the actions.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

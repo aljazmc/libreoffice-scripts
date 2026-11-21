@@ -3,7 +3,7 @@
 Should we buy the robotic welding cell? The case on one page.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#e08a4b",

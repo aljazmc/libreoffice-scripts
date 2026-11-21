@@ -3,7 +3,7 @@
 Four projects with stars, issues and what maintaining taught.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#859900",

@@ -4,7 +4,7 @@ The review in full: attendees, decisions, actions, comments, the budget
 check and the follow-up.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7a1f3d",

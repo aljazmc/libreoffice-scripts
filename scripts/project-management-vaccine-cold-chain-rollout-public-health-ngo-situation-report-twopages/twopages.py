@@ -3,7 +3,7 @@
 Sitrep 31 with coverage, the cold chain, stock and the actions.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#0072bc",

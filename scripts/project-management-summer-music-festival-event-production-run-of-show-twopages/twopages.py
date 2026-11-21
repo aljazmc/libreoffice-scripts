@@ -3,7 +3,7 @@
 Landscape. Saturday by stage, with changeovers, curfews and the cues.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

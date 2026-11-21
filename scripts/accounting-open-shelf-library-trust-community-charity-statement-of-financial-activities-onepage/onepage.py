@@ -3,7 +3,7 @@
 Income and spending of the trust for 2026/27 by fund.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",

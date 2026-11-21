@@ -3,7 +3,7 @@
 The order with the build slots and payment schedule.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c26a2d",

@@ -3,7 +3,7 @@
 The full typographic record, illness year included.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ff2a00",

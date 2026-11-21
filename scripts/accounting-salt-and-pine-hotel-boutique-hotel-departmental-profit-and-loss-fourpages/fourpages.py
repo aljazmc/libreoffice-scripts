@@ -3,7 +3,7 @@
 The statement, each department, the costs, the ratios and the commentary.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

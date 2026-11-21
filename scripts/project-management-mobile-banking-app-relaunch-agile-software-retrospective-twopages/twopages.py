@@ -3,7 +3,7 @@
 The retro with the board, the team's mood over the sprints and the actions.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#6d28d9",

@@ -3,7 +3,7 @@
 Why a games artist wants to light real rooms.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7dd3fc",

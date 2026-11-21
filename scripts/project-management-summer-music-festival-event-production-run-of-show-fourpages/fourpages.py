@@ -4,7 +4,7 @@ Landscape. The whole weekend by stage, the changeovers, the cues, the
 curfews and the contacts.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

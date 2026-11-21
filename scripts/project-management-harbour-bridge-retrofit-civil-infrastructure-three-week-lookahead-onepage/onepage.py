@@ -4,7 +4,7 @@ Landscape. The next three weeks of the works on one bar chart, with the
 night possessions and the critical path.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

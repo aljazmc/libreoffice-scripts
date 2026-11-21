@@ -3,7 +3,7 @@
 What a mile costs the fleet, and what it earns.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1c1c1c",

@@ -3,7 +3,7 @@
 Landscape. The audit with the revenue by outlet and the exceptions.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

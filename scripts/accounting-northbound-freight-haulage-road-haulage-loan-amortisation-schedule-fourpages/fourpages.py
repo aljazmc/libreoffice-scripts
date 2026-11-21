@@ -3,7 +3,7 @@
 Landscape. The full schedule, the terms, covenants and early repayment.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#2b2b2b",

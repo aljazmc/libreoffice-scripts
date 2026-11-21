@@ -3,7 +3,7 @@
 The bugs by severity and the burn towards release candidate.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7cff6b",

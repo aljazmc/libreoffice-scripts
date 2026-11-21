@@ -3,7 +3,7 @@
 One partner's share of the year's profit and her capital account.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c08a1e",

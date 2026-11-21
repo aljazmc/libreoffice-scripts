@@ -3,7 +3,7 @@
 Every restricted fund, what came in, what was spent and what is left.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",

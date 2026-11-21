@@ -4,7 +4,7 @@ The roster in full: the org chart, shifts, departments, the hours and the
 welfare plan.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

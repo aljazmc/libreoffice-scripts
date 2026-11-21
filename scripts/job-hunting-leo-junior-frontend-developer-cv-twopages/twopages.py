@@ -3,7 +3,7 @@
 Two receipts: the workshop years and the code years.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#000000",

@@ -4,7 +4,7 @@ Trial load 3 with the funnel of records, the errors by type and the trend of
 the loads.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

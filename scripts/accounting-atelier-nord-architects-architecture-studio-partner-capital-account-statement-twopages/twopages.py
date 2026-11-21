@@ -3,7 +3,7 @@
 The statement with the profit sharing and the drawings.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c08a1e",

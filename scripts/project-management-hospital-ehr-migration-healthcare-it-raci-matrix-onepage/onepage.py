@@ -4,7 +4,7 @@ Who is responsible, accountable, consulted and informed for the main
 deliverables.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

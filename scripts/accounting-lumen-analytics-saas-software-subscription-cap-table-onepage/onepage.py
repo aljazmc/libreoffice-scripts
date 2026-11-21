@@ -3,7 +3,7 @@
 Landscape. Who owns Lumen after the Series A, fully diluted.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#4f46e5",

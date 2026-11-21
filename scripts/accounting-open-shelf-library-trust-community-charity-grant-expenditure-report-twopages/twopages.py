@@ -3,7 +3,7 @@
 Spending against the grant budget, with the outcomes.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",

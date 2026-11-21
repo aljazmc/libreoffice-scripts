@@ -3,7 +3,7 @@
 The pack: profit and loss, balance sheet, cash, dentists and commentary.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#0e9f9a",

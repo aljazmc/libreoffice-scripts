@@ -3,7 +3,7 @@
 How many crew, where and when, over the build, the show and the break.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

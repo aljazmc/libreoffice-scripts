@@ -3,7 +3,7 @@
 The long letter with a first idea for the lab's next film.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#fbbf24",

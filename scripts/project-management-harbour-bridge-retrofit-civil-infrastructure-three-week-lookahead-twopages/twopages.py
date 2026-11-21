@@ -4,7 +4,7 @@ Landscape. The lookahead bar chart with crews, possessions and the
 constraints to clear.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

@@ -4,7 +4,7 @@ The credit note, the inspection, the account after credit and the returns
 policy.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#e4572e",

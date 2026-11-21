@@ -3,7 +3,7 @@
 Readiness by department and dimension on one heat map, with the verdict.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

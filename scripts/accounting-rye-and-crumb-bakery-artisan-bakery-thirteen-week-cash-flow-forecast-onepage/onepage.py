@@ -4,7 +4,7 @@ Landscape. Thirteen weeks of cash in and out, and the lowest point of the
 balance.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

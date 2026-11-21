@@ -4,7 +4,7 @@ The evaluation in full: visits, audiences, dwell, learning, accessibility
 and recommendations.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7a1f3d",

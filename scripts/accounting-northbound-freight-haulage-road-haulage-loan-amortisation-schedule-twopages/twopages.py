@@ -3,7 +3,7 @@
 Landscape. The schedule, the split of interest and capital and the balance.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#2b2b2b",

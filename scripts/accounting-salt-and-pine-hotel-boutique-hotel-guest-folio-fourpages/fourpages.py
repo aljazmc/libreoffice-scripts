@@ -3,7 +3,7 @@
 The folio, the charges, the payments, the taxes and the house notes.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

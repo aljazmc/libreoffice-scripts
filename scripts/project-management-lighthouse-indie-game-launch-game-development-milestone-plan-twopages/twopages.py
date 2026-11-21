@@ -3,7 +3,7 @@
 The milestones with their exit criteria, the features and the team.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7cff6b",

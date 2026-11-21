@@ -4,7 +4,7 @@ Landscape. The hour-by-hour cutover with the go/no-go criteria and the
 downtime procedures.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

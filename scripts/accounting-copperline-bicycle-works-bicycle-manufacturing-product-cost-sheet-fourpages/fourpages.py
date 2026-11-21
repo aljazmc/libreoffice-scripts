@@ -3,7 +3,7 @@
 The full bill of materials, routing, overhead rates and price points.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c26a2d",

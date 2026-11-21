@@ -3,7 +3,7 @@
 Credits, gaps and the turn to medicine, on two black pages.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#fbbf24",

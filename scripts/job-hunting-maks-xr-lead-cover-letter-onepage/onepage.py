@@ -3,7 +3,7 @@
 A neon letter to a surgical training company.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ff2fd0",

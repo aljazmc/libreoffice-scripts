@@ -3,7 +3,7 @@
 The statement, its notes, the monthly trend and the costs line by line.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

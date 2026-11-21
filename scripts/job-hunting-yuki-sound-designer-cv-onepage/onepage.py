@@ -3,7 +3,7 @@
 A CV set like a single page of a printed score.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7c2d12",

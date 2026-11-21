@@ -4,7 +4,7 @@ The heat map of the top risks before and after treatment, with the five that
 matter most.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

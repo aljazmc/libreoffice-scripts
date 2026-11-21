@@ -3,7 +3,7 @@
 The statement by channel with contribution and margins.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#e4572e",

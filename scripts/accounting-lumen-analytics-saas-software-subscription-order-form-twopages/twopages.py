@@ -3,7 +3,7 @@
 The order with the price ramp, the billing schedule and the terms.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#4f46e5",

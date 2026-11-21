@@ -4,7 +4,7 @@ The statement, the profit sharing rules, the drawings, tax reserve and
 history.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c08a1e",

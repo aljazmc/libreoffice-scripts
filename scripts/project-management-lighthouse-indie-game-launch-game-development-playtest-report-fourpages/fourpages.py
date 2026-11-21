@@ -4,7 +4,7 @@ The playtest in full: who played, the funnel, levels, ratings, bugs, quotes
 and the changes.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7cff6b",

@@ -3,7 +3,7 @@
 The statement with the works that explain it.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#2a9d8f",

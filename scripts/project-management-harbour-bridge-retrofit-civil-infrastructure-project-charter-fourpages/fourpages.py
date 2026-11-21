@@ -4,7 +4,7 @@ The full charter: objectives, scope, constraints, the breakdown of the work,
 the milestones, the budget, the governance and the first risks.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

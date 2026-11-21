@@ -3,7 +3,7 @@
 Safety, health and environment with the trend, the pyramid and the actions.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#00707a",

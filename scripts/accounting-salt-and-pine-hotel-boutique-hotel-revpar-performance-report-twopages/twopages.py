@@ -3,7 +3,7 @@
 RevPAR by month, segment and channel, against the comp set.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#d4b37a",

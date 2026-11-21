@@ -3,7 +3,7 @@
 The director's cut, with the stories behind the shots.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#fbbf24",

@@ -3,7 +3,7 @@
 The economics by channel, cohort and product, with the levers.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#e4572e",

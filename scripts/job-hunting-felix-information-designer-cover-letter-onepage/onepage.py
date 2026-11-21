@@ -3,7 +3,7 @@
 A letter set like a public notice: short and loud.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ff2a00",

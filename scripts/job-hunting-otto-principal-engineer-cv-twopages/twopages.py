@@ -3,7 +3,7 @@
 Two pages of commits, gaps and a sailing log.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#268bd2",

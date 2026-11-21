@@ -3,7 +3,7 @@
 The budget by department, the income and the bridge from last year.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

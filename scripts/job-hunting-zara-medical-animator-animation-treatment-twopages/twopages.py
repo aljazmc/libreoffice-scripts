@@ -3,7 +3,7 @@
 The treatment, scene by scene, with what the audience must learn.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#111111",

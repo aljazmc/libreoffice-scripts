@@ -3,7 +3,7 @@
 Landscape. Every asset of the estate, its cost and its book value.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

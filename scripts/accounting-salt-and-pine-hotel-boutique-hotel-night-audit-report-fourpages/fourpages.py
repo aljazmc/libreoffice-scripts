@@ -3,7 +3,7 @@
 Landscape. The audit, the ledgers, the exceptions and tomorrow's arrivals.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

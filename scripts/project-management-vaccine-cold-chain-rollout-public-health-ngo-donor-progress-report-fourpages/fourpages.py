@@ -4,7 +4,7 @@ Year 2 in full: results, spending, stories, challenges, risks and the plan
 for year 3.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#0072bc",

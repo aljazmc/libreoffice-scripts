@@ -4,7 +4,7 @@ The logframe in full, with the theory of change, activities, inputs and
 assumptions.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#0072bc",

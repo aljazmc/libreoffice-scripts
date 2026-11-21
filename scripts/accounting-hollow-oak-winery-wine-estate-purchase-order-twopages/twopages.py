@@ -3,7 +3,7 @@
 The order with the delivery schedule and the approvals.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

@@ -3,7 +3,7 @@
 A CV glowing like a VR menu, one page deep.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ff2fd0",

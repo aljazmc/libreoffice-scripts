@@ -3,7 +3,7 @@
 The stack plan with floors, desks, the sharing ratios and the adjacencies.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#b5651d",

@@ -3,7 +3,7 @@
 Landscape. The forecast week by week, with the receipts and the payments.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

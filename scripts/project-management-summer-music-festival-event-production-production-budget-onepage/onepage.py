@@ -3,7 +3,7 @@
 Where the money goes and where it comes from, on one page.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

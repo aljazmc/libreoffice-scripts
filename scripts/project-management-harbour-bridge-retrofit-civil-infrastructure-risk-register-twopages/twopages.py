@@ -4,7 +4,7 @@ The heat map, the register of the top risks and their owners and the trend
 of the exposure.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

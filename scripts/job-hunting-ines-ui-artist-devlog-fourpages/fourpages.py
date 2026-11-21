@@ -3,7 +3,7 @@
 The complete devlog, including the month Inês nearly quit.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#4ade80",

@@ -3,7 +3,7 @@
 The loans by lender and status, and the ones that could still fall through.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7a1f3d",

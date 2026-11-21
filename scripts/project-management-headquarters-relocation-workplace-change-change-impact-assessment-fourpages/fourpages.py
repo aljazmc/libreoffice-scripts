@@ -4,7 +4,7 @@ The assessment in full: impacts, the survey, readiness, resistance and the
 change plan.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#b5651d",

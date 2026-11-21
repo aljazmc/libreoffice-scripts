@@ -3,7 +3,7 @@
 Context, motivation and the gaps, as a reviewer would want them.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#268bd2",

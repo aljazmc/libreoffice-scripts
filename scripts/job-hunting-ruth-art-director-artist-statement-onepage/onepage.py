@@ -3,7 +3,7 @@
 What Ruth draws and why, on a single page.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#2a9d8f",

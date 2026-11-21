@@ -4,7 +4,7 @@ Landscape. The campaign in full: shipping, tests, integration, the launch,
 LEOP and the contingencies.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#c8102e",

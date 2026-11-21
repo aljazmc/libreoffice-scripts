@@ -3,7 +3,7 @@
 A CV printed straight from the shell, one screen deep.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#39ff14",

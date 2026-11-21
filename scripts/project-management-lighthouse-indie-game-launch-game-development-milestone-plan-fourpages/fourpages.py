@@ -4,7 +4,7 @@ The plan in full: milestones, criteria, features, the team, the budget
 runway and the risks.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7cff6b",

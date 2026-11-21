@@ -3,7 +3,7 @@
 A CV that opens like a title sequence, in one reel.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#fbbf24",

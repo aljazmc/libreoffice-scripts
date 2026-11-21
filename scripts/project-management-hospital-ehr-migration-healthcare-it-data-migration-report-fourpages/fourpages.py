@@ -4,7 +4,7 @@ Trial load 3 in full: the funnel, the domains, the errors, clinical
 validation and the plan for the dress rehearsal.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

@@ -4,7 +4,7 @@ The training plan in full: roles, courses, the schedule, the rooms, the
 super users and the proficiency checks.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

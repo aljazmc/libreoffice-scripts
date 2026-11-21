@@ -3,7 +3,7 @@
 Everything, including the project Otto handed over and why.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#859900",

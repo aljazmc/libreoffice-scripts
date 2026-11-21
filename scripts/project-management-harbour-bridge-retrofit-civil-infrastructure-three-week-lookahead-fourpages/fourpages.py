@@ -4,7 +4,7 @@ Landscape. The lookahead by span, the crews by shift, the possessions,
 constraints and deliveries.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

@@ -3,7 +3,7 @@
 Sales by week, by type and by channel, against last year and the target.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

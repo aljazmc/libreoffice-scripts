@@ -3,7 +3,7 @@
 The monthly duty return for wine released from the bonded cellar.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

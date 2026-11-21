@@ -3,7 +3,7 @@
 The month's fuel card statement checked against the vehicles.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1c1c1c",

@@ -3,7 +3,7 @@
 The claim, the mileage, the receipts list, the policy and the approvals.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c08a1e",

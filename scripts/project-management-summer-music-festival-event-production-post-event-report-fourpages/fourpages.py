@@ -4,7 +4,7 @@ The report in full: numbers, audience, operations, safety, sustainability,
 money and lessons.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

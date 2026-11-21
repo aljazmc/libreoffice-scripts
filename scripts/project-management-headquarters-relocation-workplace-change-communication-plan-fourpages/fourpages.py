@@ -4,7 +4,7 @@ The plan in full: audiences, messages, channels, the calendar, feedback and
 the FAQ.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#b5651d",

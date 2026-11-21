@@ -4,7 +4,7 @@ The burndown in full: the trend, the matrix, every open risk, the retired
 ones and the plan.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#c8102e",

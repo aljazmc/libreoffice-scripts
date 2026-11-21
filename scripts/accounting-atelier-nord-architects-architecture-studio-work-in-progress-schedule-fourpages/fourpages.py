@@ -3,7 +3,7 @@
 Landscape. The schedule, the provisions, the aging and the billing plan.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c08a1e",

@@ -3,7 +3,7 @@
 What it costs to build one Ridgeline gravel bike.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c26a2d",

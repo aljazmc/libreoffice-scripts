@@ -3,7 +3,7 @@
 The claim, the full donor schedule, the declarations check and the history.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",

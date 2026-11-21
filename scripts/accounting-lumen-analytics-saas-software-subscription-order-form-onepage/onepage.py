@@ -3,7 +3,7 @@
 A three-year subscription order: the plan, the price and the signatures.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#4f46e5",

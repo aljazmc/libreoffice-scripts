@@ -3,7 +3,7 @@
 The order, the schedules, the service levels and the data terms.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#4f46e5",

@@ -3,7 +3,7 @@
 The requirements and how each is verified, with the status of the closure.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#c8102e",

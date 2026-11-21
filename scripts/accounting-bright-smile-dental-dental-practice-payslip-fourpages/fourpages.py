@@ -4,7 +4,7 @@ The payslip, the year to date, the pension, the tax code and the pay
 calendar.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#0e9f9a",

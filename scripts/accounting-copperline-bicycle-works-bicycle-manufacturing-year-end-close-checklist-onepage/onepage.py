@@ -3,7 +3,7 @@
 Every task to close the 2027 books, ticked or not.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c26a2d",

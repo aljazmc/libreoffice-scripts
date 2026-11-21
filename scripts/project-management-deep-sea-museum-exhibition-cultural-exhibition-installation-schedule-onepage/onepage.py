@@ -3,7 +3,7 @@
 Eight weeks from empty halls to the opening night on one bar chart.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7a1f3d",

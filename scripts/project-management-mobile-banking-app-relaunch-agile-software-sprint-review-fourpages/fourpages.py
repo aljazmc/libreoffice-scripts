@@ -4,7 +4,7 @@ Sprint 14 in full: goal, burndown, velocity, scope change, quality, the demo
 and the next sprint.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#6d28d9",

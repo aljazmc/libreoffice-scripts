@@ -3,7 +3,7 @@
 August by department: rooms, food and drink, spa.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

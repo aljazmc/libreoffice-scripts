@@ -3,7 +3,7 @@
 The long letter, with what Ruth would change in the first list.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#e63946",

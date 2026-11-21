@@ -3,7 +3,7 @@
 Two pages of output, gaps logged honestly as idle processes.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#39ff14",

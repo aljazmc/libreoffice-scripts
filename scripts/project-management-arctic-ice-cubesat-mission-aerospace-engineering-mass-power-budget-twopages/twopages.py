@@ -3,7 +3,7 @@
 The budgets by subsystem, with the margins, modes and the trend.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#c8102e",

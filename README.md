@@ -2,8 +2,8 @@
 
 Python scripts that write documents as flat OpenDocument XML, and a shell
 script that converts them with LibreOffice into PDF, Word, images and about
-thirty other formats. Each document is a self-contained project in
-`scripts/`.
+thirty other formats. Each document is a project in `scripts/`, set by
+one of three shared typesetters.
 
 ## Requirements
 
@@ -63,6 +63,9 @@ project.sh ──> scripts/export<format>.py ──> scripts/common.py
 
 - `project.sh` checks the arguments and runs `scripts/export<format>.py`
   (or `scripts/saveodf.py`) with `PROJECT=<project>`.
+- `scripts/typesetting/` holds the typesetters the projects share, one
+  per family: `accounting.py`, `job_hunting.py` and
+  `project_management.py`.
 - `scripts/common.py` imports the project, calls its function and runs
   LibreOffice with a throwaway profile, so it never touches a running
   LibreOffice and conversions can run in parallel.
@@ -77,12 +80,14 @@ A project is a folder `scripts/<name>-<length>/`, where `<length>` is
 ```
 scripts/job-hunting-nika-creative-technologist-cv-onepage/
 ├── onepage.py       # DESIGN and onepage(), which returns the flat ODT
-├── content.py       # the subject and the DOCUMENT: everything it could say
-└── typesetting.py   # turns content and design into exactly N pages
+└── content.py       # the subject and the DOCUMENT: everything it could say
 ```
 
 The last part of the folder name is the module and function name, so it
-must be a valid Python name. A project needs nothing outside its folder.
+must be a valid Python name. A project needs nothing outside its folder
+but the typesetter of its family, which turns content and design into
+exactly N pages: `onepage.py` starts with
+`from typesetting.job_hunting import typeset`.
 
 **Exact page counts.** Fonts are never shrunk to fit. Every paragraph,
 entry, table row and chart in `content.py` has a priority, and the
@@ -105,8 +110,8 @@ content and design, cut to different lengths.
 
 **Design.** The `DESIGN` dict sets colors, fonts, density, margins and the
 style of the header and headings, and where they exist, the orientation,
-tables and charts. See `stylesheet()` (and `Theme`) in `typesetting.py`
-for every option.
+tables and charts. See `stylesheet()` (and `Theme`) in the family's
+typesetter in `scripts/typesetting/` for every option.
 
 There are three families of projects, each with ten subjects in three
 lengths.

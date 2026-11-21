@@ -3,7 +3,7 @@
 The claim in one page: the projects, the qualifying costs and the credit.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#4f46e5",

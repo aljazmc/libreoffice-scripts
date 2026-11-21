@@ -4,7 +4,7 @@ Period 9 in full: indices, curves, variances by package, the forecast and
 the corrective actions.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

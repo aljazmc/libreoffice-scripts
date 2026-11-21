@@ -3,7 +3,7 @@
 A CV printed on a till receipt, one page long.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#000000",

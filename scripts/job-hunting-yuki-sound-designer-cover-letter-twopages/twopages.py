@@ -3,7 +3,7 @@
 Why a game sound designer wants to give electric cars a voice.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7c2d12",

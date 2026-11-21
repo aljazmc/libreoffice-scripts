@@ -3,7 +3,7 @@
 Year 2 with results, spending, a story from the field and the challenges.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#0072bc",

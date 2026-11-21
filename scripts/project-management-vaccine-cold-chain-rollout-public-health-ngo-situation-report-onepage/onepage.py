@@ -3,7 +3,7 @@
 Sitrep 31: coverage by district and the cold chain status this week.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#0072bc",

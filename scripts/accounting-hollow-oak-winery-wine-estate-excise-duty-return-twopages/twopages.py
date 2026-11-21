@@ -3,7 +3,7 @@
 The return with the bond movements and the duty calculation.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

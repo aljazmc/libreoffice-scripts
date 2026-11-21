@@ -3,7 +3,7 @@
 One project from brief to broadcast on a single page.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#000000",

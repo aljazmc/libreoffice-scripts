@@ -4,7 +4,7 @@ The case in full: strategic, economic, commercial, financial and management
 cases.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#00707a",

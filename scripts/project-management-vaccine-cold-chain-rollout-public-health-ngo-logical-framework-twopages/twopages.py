@@ -4,7 +4,7 @@ The logframe with the indicators, baselines, targets and the means of
 verification.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#0072bc",

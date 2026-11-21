@@ -3,7 +3,7 @@
 The process of an explainer film, step by step.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#000000",

@@ -3,7 +3,7 @@
 Landscape. The valuation, the SKUs, the aging, the provisions and the count.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#e4572e",

@@ -3,7 +3,7 @@
 The case with the options, the value bridge and the sensitivities.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#00707a",

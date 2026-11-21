@@ -3,7 +3,7 @@
 The crew by department and shift, the leads and the welfare rules.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

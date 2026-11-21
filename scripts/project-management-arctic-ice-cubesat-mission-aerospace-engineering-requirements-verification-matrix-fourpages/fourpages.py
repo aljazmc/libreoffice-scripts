@@ -4,7 +4,7 @@ The matrix in full: requirements, methods, evidence, waivers and the closure
 plan.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#c8102e",

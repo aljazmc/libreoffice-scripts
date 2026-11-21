@@ -4,7 +4,7 @@ The loans in full: lenders, conditions, insurance, couriers, transport and
 the timeline.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7a1f3d",

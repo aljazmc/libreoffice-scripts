@@ -3,7 +3,7 @@
 The long letter, with a first sketch of a brand sound.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7c2d12",

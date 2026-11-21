@@ -4,7 +4,7 @@ The roadmap in full: themes, bets, the release train, dependencies, capacity
 and what we said no to.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#6d28d9",

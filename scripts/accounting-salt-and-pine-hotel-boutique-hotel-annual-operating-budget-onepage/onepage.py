@@ -3,7 +3,7 @@
 Landscape. 2028 month by month: revenue, costs and profit.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

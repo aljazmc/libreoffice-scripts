@@ -3,7 +3,7 @@
 A CV drawn as a single blueprint sheet.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7dd3fc",

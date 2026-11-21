@@ -3,7 +3,7 @@
 The full set of drawings, with the stories in the margins.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7dd3fc",

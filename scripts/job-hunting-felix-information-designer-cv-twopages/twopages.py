@@ -3,7 +3,7 @@
 Two pages on a strict grid, gaps marked in red.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ff2a00",

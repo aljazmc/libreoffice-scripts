@@ -3,7 +3,7 @@
 The statement with the reconciliation from net loss to operating cash.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#4f46e5",

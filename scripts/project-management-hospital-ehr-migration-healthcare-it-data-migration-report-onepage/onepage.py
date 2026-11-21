@@ -3,7 +3,7 @@
 Trial load 3 on one page: records extracted, loaded and reconciled.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

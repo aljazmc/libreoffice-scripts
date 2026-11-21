@@ -3,7 +3,7 @@
 The full history, including the start-up that did not work.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#268bd2",

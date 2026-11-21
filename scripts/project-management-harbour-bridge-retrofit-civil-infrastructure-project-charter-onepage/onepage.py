@@ -4,7 +4,7 @@ The mandate on a single sheet: why the bridge is being retrofitted, the
 scope, the budget, the milestones and who decides.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

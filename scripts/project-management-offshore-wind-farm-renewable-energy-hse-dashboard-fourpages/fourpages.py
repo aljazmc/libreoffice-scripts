@@ -4,7 +4,7 @@ HSE in full: indicators, the pyramid, incidents, environment, audits and the
 plan.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#00707a",

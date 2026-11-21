@@ -3,7 +3,7 @@
 Two pages: the games, the start-up and its end.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ff2fd0",

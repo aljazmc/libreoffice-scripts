@@ -3,7 +3,7 @@
 The long version, including what Nika would build in the first year.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#39ff14",

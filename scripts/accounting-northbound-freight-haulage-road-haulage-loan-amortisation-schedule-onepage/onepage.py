@@ -3,7 +3,7 @@
 Landscape. The loan for six new tractor units, payment by payment.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#2b2b2b",

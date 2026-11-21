@@ -3,7 +3,7 @@
 Seven prototypes, each with what it proved or killed.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#22d3ee",

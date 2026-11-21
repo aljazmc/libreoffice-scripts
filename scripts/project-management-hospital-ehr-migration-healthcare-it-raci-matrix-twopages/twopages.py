@@ -3,7 +3,7 @@
 The RACI for every deliverable, with the roles and the load on each of them.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

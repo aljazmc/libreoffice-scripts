@@ -3,7 +3,7 @@
 The calendar of beats, channels and the wishlist curve.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7cff6b",

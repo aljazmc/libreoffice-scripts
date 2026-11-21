@@ -3,7 +3,7 @@
 A letter from game worlds to real buildings, on one sheet.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7dd3fc",

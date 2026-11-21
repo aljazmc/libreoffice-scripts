@@ -3,7 +3,7 @@
 The claim with the cost workings by category and the projects.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#4f46e5",

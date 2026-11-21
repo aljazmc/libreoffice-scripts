@@ -3,7 +3,7 @@
 Sales against target, by ticket type, at T-minus 12 weeks.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

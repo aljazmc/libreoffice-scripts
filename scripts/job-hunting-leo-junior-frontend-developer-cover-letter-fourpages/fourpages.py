@@ -3,7 +3,7 @@
 The long letter with a first look at the start-up's app.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#000000",

@@ -3,7 +3,7 @@
 The accounts, the cost per frame, the overheads and the notes.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c26a2d",

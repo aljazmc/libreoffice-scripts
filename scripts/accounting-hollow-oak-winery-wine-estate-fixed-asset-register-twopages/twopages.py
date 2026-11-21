@@ -3,7 +3,7 @@
 Landscape. The register by class with the depreciation of the year.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

@@ -3,7 +3,7 @@
 The full statement, including the year the machines came.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#2a9d8f",

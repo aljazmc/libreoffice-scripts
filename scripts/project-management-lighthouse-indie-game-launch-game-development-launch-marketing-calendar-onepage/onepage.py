@@ -3,7 +3,7 @@
 The beats to launch day and the wishlists they should bring.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7cff6b",

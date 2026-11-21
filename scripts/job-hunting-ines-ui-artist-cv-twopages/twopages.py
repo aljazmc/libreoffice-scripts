@@ -3,7 +3,7 @@
 Two levels, including the bakery bonus stage.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ffcc00",

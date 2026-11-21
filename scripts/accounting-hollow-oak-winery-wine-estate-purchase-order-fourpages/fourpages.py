@@ -3,7 +3,7 @@
 The order, the specification, the quotes compared and the terms.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

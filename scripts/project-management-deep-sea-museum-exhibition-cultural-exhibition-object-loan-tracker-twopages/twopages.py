@@ -3,7 +3,7 @@
 Every loan with its lender, status, conditions and courier.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7a1f3d",

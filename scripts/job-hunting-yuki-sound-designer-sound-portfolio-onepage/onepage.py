@@ -3,7 +3,7 @@
 One sound, its recipe and its reason, on one page.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#1e3a8a",

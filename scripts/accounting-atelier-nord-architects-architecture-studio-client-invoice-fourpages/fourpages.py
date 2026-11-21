@@ -3,7 +3,7 @@
 The invoice, the fee account, the timesheet appendix and the expenses.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c08a1e",

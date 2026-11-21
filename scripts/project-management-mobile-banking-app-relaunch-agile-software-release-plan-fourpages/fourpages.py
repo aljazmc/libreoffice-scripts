@@ -4,7 +4,7 @@ Release 5.0 in full: scope, train, staged rollout, go criteria, rollback,
 comms and support.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#6d28d9",

@@ -3,7 +3,7 @@
 The analysis, the trend, the trucks, the customers and the actions.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1c1c1c",

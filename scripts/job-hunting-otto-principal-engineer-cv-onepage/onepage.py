@@ -3,7 +3,7 @@
 A CV written in Markdown and never converted, on purpose.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#268bd2",

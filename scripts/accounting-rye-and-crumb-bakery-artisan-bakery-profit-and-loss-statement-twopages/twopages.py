@@ -3,7 +3,7 @@
 The statement in detail, with margins and the flow of each euro.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

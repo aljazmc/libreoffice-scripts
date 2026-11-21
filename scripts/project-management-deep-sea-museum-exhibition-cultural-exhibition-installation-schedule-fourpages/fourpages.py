@@ -4,7 +4,7 @@ The installation in full: trades, galleries, object moves, conservation
 checks and the snag list.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7a1f3d",

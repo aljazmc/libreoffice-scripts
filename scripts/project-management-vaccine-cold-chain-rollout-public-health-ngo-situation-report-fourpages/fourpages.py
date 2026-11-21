@@ -4,7 +4,7 @@ Sitrep 31 in full: coverage, cold chain, stock, logistics, the field and the
 requests.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#0072bc",

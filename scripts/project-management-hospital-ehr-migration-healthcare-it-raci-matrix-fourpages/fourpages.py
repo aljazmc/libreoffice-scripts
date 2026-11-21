@@ -4,7 +4,7 @@ The RACI in full: deliverables, roles, the load, the decision rights and the
 escalation path.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

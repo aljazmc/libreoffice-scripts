@@ -3,7 +3,7 @@
 The day the first build ran, on one page.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#4ade80",

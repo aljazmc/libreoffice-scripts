@@ -3,7 +3,7 @@
 A warm letter to a children's publisher, on one page.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#e63946",

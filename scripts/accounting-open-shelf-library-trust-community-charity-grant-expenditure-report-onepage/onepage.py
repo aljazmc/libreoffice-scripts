@@ -3,7 +3,7 @@
 How the Reading Rooms grant was spent in year two.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",

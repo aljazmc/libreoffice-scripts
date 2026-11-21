@@ -3,7 +3,7 @@
 A letter to a science museum, typed into a terminal at night.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#39ff14",

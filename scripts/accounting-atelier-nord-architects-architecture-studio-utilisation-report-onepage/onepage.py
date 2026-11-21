@@ -3,7 +3,7 @@
 How much of the studio's time was billable last quarter.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c08a1e",

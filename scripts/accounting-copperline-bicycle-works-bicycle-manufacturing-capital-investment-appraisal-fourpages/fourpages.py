@@ -4,7 +4,7 @@ The appraisal, the options, the sensitivities, the risks and the
 recommendation.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#e08a4b",

@@ -3,7 +3,7 @@
 Burn by team, runway scenarios and the levers.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#818cf8",

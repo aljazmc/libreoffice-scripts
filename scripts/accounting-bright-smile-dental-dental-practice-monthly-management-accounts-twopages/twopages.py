@@ -3,7 +3,7 @@
 The month's profit and loss, balance sheet and key numbers.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#0e9f9a",

@@ -3,7 +3,7 @@
 The OKRs with progress, confidence and the trend of the key metrics.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#6d28d9",

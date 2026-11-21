@@ -3,7 +3,7 @@
 Every consent and licence, where it stands and what is on the critical path.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#00707a",

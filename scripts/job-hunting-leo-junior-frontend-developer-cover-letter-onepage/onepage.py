@@ -3,7 +3,7 @@
 A short letter from the workshop to a start-up for craftspeople.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#000000",

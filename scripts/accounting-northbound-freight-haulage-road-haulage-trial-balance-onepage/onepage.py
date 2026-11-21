@@ -3,7 +3,7 @@
 Every account in the ledger at the year end, debits and credits.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1c1c1c",

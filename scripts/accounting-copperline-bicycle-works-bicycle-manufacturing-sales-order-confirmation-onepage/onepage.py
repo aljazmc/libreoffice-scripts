@@ -3,7 +3,7 @@
 A dealer's order for 40 bicycles, confirmed with the deposit due.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c26a2d",

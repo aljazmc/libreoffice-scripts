@@ -3,7 +3,7 @@
 What the estate owns and owes on 30 June 2027.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

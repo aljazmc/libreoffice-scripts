@@ -3,7 +3,7 @@
 The long version with an RFC for the first six months.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#268bd2",

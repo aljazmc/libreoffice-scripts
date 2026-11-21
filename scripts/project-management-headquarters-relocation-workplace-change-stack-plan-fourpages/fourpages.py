@@ -3,7 +3,7 @@
 The stack plan in full: floors, teams, desks, rooms, adjacencies and growth.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#b5651d",

@@ -4,7 +4,7 @@ Landscape. The move in full: waves, teams, the weekend runsheets, IT and the
 first days.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#b5651d",

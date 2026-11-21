@@ -3,7 +3,7 @@
 The cash-up with the coin count, the card terminals and the banking.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

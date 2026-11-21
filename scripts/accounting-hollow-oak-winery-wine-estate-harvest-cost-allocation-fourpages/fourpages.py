@@ -3,7 +3,7 @@
 The allocation, the drivers, the blocks, the margins and the method.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

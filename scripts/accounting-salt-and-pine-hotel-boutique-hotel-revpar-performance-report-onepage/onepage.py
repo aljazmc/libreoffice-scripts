@@ -3,7 +3,7 @@
 Occupancy, rate and revenue per room against the competitors.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#d4b37a",

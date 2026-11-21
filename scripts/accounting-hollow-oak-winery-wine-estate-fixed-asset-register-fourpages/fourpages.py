@@ -3,7 +3,7 @@
 Landscape. The register, the policies, additions, disposals and the vines.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

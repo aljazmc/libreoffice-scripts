@@ -3,7 +3,7 @@
 Five sketches from a decade of code that draws.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ff6ec7",

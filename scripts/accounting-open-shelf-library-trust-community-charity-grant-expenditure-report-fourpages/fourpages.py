@@ -3,7 +3,7 @@
 Spending, variances, outcomes, stories and the plan for year three.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",

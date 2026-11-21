@@ -3,7 +3,7 @@
 The audiences, the messages, the channels and the calendar.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#b5651d",

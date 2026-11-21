@@ -3,7 +3,7 @@
 The departmental statement with the undistributed costs.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

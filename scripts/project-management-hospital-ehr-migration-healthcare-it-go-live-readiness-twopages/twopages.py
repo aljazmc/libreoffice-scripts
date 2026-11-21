@@ -3,7 +3,7 @@
 The readiness heat map, the open criteria and the trend towards go-live.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

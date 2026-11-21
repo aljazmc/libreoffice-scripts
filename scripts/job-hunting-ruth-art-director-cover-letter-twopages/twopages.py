@@ -3,7 +3,7 @@
 Why an illustrator wants to direct other illustrators.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#e63946",

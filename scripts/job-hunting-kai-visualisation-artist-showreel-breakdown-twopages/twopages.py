@@ -3,7 +3,7 @@
 The main shots with what Kai built, lit and borrowed.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#fde68a",

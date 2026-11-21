@@ -3,7 +3,7 @@
 The whole zine, staples and gaps included.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#e63946",

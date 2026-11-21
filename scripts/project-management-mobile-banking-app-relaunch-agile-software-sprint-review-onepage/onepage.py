@@ -3,7 +3,7 @@
 Sprint 14 in one page: the goal, the burndown and what was done.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#6d28d9",

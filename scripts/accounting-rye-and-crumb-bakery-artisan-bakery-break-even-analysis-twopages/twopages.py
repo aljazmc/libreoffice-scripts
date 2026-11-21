@@ -3,7 +3,7 @@
 The break-even with the costs, the margins and the sensitivity.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

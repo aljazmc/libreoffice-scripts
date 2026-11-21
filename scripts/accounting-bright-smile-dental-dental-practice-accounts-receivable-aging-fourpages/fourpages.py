@@ -4,7 +4,7 @@ The aging, every overdue account, the payers, the trend and the collection
 plan.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#0e9f9a",

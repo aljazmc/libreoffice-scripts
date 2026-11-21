@@ -4,7 +4,7 @@ Saturday's cash-up sheet: the float, the takings by tender and the
 difference.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

@@ -4,7 +4,7 @@ Readiness in full: every department, every criterion, the trend, the gaps
 and the decision.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

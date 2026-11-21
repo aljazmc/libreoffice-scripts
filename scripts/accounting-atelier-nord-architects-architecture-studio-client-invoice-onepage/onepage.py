@@ -3,7 +3,7 @@
 A fee invoice for stage 4 of a library extension.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c08a1e",

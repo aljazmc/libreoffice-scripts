@@ -3,7 +3,7 @@
 A short letter to a car maker about the sound of silence.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#7c2d12",

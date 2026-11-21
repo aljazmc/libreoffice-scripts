@@ -3,7 +3,7 @@
 What a bottle of each wine cost to make in the 2026 vintage.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

@@ -3,7 +3,7 @@
 The complete build log of a career, crashes included.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ff2fd0",

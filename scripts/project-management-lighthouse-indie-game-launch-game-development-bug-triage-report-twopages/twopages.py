@@ -3,7 +3,7 @@
 The triage with severity, areas, the burn chart and the blockers.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7cff6b",

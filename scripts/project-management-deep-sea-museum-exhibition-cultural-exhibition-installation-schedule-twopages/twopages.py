@@ -4,7 +4,7 @@ The installation by gallery and trade, with the object moves and the
 milestones.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7a1f3d",

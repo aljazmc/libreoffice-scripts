@@ -3,7 +3,7 @@
 The quarterly claim of tax back on donations.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",

@@ -3,7 +3,7 @@
 Every shot, every tool and the work cut from the reel.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#fde68a",

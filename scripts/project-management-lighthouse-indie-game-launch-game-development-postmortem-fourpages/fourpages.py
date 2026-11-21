@@ -4,7 +4,7 @@ The postmortem in full: numbers, the timeline, what went right and wrong and
 what we do next.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7cff6b",

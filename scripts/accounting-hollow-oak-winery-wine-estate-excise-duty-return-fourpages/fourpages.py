@@ -3,7 +3,7 @@
 The return, the bond account, the losses and the year so far.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#3f5e3a",

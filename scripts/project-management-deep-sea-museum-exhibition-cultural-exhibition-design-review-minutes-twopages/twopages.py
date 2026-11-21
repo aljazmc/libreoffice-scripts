@@ -4,7 +4,7 @@ The review with the decisions, actions, the comments by gallery and the next
 steps.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#7a1f3d",

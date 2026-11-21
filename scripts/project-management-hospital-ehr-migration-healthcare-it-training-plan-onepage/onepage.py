@@ -3,7 +3,7 @@
 Who is trained by when: the staff trained per week against the target.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#005eb8",

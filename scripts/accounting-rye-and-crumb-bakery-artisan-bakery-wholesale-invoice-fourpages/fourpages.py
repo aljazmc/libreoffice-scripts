@@ -3,7 +3,7 @@
 The invoice, the delivery notes, the statement of account and the terms.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#8c4a1f",

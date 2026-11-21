@@ -4,7 +4,7 @@ Sales in full: the curve, types, channels, regions, the funnel and the
 marketing plan.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#ff3d8b",

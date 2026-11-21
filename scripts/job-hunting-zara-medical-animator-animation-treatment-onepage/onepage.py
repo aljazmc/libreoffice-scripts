@@ -3,7 +3,7 @@
 A one-page pitch for a medical animation, typed like a screenplay.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#111111",

@@ -4,7 +4,7 @@ Every change order so far, by value and status, with the effect on the
 budget.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#e8590c",

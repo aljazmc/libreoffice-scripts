@@ -3,7 +3,7 @@
 The return, workings, overseas sales, adjustments and the checks.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#e4572e",

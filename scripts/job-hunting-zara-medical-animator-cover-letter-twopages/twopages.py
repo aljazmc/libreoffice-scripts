@@ -3,7 +3,7 @@
 The letter with the story of the heart that changed her career.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#fbbf24",

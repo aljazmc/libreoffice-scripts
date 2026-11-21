@@ -3,7 +3,7 @@
 The full log: every installation, residency and reboot.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#39ff14",

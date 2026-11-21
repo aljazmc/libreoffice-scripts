@@ -3,7 +3,7 @@
 Q3 objectives and key results with their progress on one page.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#6d28d9",

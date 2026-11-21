@@ -3,7 +3,7 @@
 Landscape. The budget by month and department, with the drivers.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

@@ -3,7 +3,7 @@
 The full album, including the sounds that were cut.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#1e3a8a",

@@ -3,7 +3,7 @@
 The complete process book, with the drafts that failed.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#000000",

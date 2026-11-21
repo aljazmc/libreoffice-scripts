@@ -4,7 +4,7 @@ Landscape. Every holder, every round, the pool, the waterfall at exit and
 the notes.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#4f46e5",

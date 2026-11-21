@@ -3,7 +3,7 @@
 The cost of the bicycles made in 2027, from raw steel to finished frame.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#c26a2d",

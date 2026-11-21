@@ -3,7 +3,7 @@
 Landscape. The day closed at 02:00: rooms, revenue and payments.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#b08d57",

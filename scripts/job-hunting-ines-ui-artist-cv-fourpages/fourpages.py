@@ -3,7 +3,7 @@
 The full game with every secret level unlocked.
 """
 from content import DOCUMENT, PERSONA
-from typesetting import typeset
+from typesetting.job_hunting import typeset
 
 DESIGN = {
     "accent": "#ffcc00",

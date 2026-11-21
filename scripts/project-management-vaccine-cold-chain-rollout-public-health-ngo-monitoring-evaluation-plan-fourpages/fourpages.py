@@ -4,7 +4,7 @@ The M&E plan in full: indicators, data flow, calendar, quality, the
 evaluation and the budget.
 """
 from content import DOCUMENT, PROJECT
-from typesetting import typeset
+from typesetting.project_management import typeset
 
 DESIGN = {
     "accent": "#0072bc",

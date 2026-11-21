@@ -3,7 +3,7 @@
 The receipt, the gifts, the Gift Aid, the impact and the trust's finances.
 """
 from content import BUSINESS, DOCUMENT
-from typesetting import typeset
+from typesetting.accounting import typeset
 
 DESIGN = {
     "accent": "#1d7874",
