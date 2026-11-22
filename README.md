@@ -309,6 +309,8 @@ The tests need only bash and Python's standard library.
   picked for a missing font. The last two use `fc-list` and `pdffonts`
   (poppler-utils), and are skipped where those, the PDF or, on CI, the
   fonts are missing.
+- `tests/test_fiction.py` checks that the footer of every example project
+  ends with "Fictional example", the notice printed on every page.
 
 Lint the code with [ShellCheck](https://www.shellcheck.net/) and
 [Ruff](https://docs.astral.sh/ruff/):
@@ -325,7 +327,8 @@ request, see [.github/workflows/ci.yml](.github/workflows/ci.yml).
 
 The scripts are licensed under the [MIT License](LICENSE). The files in
 `gallery/` were made with them and are under the same license. The
-businesses, people and projects in the documents are fictional.
+businesses, people and projects in the documents are fictional, and the
+footer of every page says so.
 
 The scripts drive software and use fonts that are not part of this
 repository and have licenses of their own:
