@@ -84,7 +84,7 @@ The PDF is written to `build/job-hunting-nika-creative-technologist-cv-onepage.p
 | --- | --- |
 | LibreOffice | `soffice` on the `PATH`; it runs headless |
 | Python 3 | standard library only |
-| Fonts | Lato, Liberation, DejaVu, TeX Gyre, URW, Quicksand and others. LibreOffice substitutes missing fonts, but page counts may then change. |
+| Fonts | Lato, Liberation, DejaVu, TeX Gyre, URW base 35, Quicksand, Noto Sans Mono and Tuffy. LibreOffice substitutes missing fonts, but page counts then change; `tests/test_fonts.py` finds them. |
 
 ## Usage
 
@@ -301,6 +301,14 @@ The tests need only bash and Python's standard library.
   Writer really produced, and is skipped when the PDF is not built or is
   older than its scripts. Pick projects with `-k`, or only one kind with
   `-k estimate` or `-k test_pdf`.
+- `tests/test_fonts.py` checks the fonts. The typesetters' width tables
+  must agree and every font must have a license named in this README;
+  every font a project's `DESIGN` names must have a width in its
+  typesetter; every font must be installed; and every built PDF must embed
+  the body and heading fonts of its design, not a replacement LibreOffice
+  picked for a missing font. The last two use `fc-list` and `pdffonts`
+  (poppler-utils), and are skipped where those, the PDF or, on CI, the
+  fonts are missing.
 
 Lint the code with [ShellCheck](https://www.shellcheck.net/) and
 [Ruff](https://docs.astral.sh/ruff/):
@@ -327,8 +335,9 @@ repository and have licenses of their own:
   available under the GNU LGPL, version 3 or later. The scripts only run it
   as a separate program. Documents you convert with LibreOffice are yours,
   and its license does not apply to them.
-- The fonts are free fonts, mostly under the SIL Open Font License (Lato,
-  Liberation, Quicksand), the GUST Font License (TeX Gyre), the Bitstream
-  Vera license (DejaVu) and the GNU AGPL with a font exception (URW base
-  35). All of them allow embedding subsets in PDFs and other documents, as
-  LibreOffice does.
+- The fonts are free fonts: the SIL Open Font License (Lato, Liberation,
+  Quicksand, Noto Sans Mono), the GUST Font License (TeX Gyre), the
+  Bitstream Vera license (DejaVu), the GNU AGPL with a font exception (URW
+  base 35: C059, P052, Nimbus Sans, URW Gothic and URW Bookman) and the
+  public domain (Tuffy). All of them allow embedding subsets in PDFs and
+  other documents, as LibreOffice does.
