@@ -23,7 +23,7 @@ DESIGN = {
     "heading": "bar",
     "table": "zebra",
     "body_align": "start",
-    "footer": "Bright Smile Dental Practice · Accounts Receivable Aging",
+    "footer": "Bright Smile Dental Practice · Accounts Receivable Aging · Fictional example",
 }
 
 

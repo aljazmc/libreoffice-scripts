@@ -24,7 +24,7 @@ DESIGN = {
     "heading_case": "upper",
     "table": "zebra",
     "body_align": "start",
-    "footer": "Copperline Bicycle Works · Product Cost Sheet",
+    "footer": "Copperline Bicycle Works · Product Cost Sheet · Fictional example",
 }
 
 

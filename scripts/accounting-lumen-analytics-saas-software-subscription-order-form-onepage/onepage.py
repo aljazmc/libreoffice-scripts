@@ -23,7 +23,7 @@ DESIGN = {
     "table": "lines",
     "body_align": "justify",
     "margin": 60,
-    "footer": "Lumen Analytics Inc. · Enterprise Order Form · confidential",
+    "footer": "Lumen Analytics Inc. · Enterprise Order Form · confidential · Fictional example",
 }
 
 

@@ -26,7 +26,7 @@ DESIGN = {
     "bad": "#b23a2b",
     "info": "#4a6670",
     "radius": 0,
-    "footer": "Wharf Street HQ Move · Stack Plan",
+    "footer": "Wharf Street HQ Move · Stack Plan · Fictional example",
 }
 
 

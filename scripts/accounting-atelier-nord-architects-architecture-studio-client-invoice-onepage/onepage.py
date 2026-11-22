@@ -23,7 +23,7 @@ DESIGN = {
     "body_align": "start",
     "margin": 72,
     "title_size": 30,
-    "footer": "Atelier Nord Architects · Invoice 2027-041",
+    "footer": "Atelier Nord Architects · Invoice 2027-041 · Fictional example",
 }
 
 

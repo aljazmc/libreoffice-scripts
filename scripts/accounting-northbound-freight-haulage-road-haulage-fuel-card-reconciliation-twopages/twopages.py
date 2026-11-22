@@ -25,7 +25,7 @@ DESIGN = {
     "table": "grid",
     "density": "compact",
     "body_align": "start",
-    "footer": "NORTHBOUND FREIGHT LTD · Fuel Card Reconciliation",
+    "footer": "NORTHBOUND FREIGHT LTD · Fuel Card Reconciliation · Fictional example",
 }
 
 

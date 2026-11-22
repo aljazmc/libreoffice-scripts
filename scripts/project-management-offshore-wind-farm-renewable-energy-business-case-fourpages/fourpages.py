@@ -25,7 +25,7 @@ DESIGN = {
     "info": "#4c8db5",
     "radius": 1,
     "footer": "Northgate Offshore Wind · Business Case · Commercial in "
-        "confidence",
+        "confidence · Fictional example",
 }
 
 

@@ -25,7 +25,7 @@ DESIGN = {
     "table": "zebra",
     "body_align": "start",
     "margin": 60,
-    "footer": "Tidewear Outdoor Ltd · Credit Note CN-3317",
+    "footer": "Tidewear Outdoor Ltd · Credit Note CN-3317 · Fictional example",
 }
 
 

@@ -24,7 +24,7 @@ DESIGN = {
     "heading": "tint",
     "table": "zebra",
     "body_align": "start",
-    "footer": "Salt & Pine · a hotel by the dunes · Annual Operating Budget",
+    "footer": "Salt & Pine · a hotel by the dunes · Annual Operating Budget · Fictional example",
 }
 
 

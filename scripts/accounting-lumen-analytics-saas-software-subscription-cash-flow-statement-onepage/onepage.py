@@ -22,7 +22,7 @@ DESIGN = {
     "heading": "plain",
     "table": "lines",
     "body_align": "start",
-    "footer": "Lumen Analytics Inc. · Cash Flow Statement · confidential",
+    "footer": "Lumen Analytics Inc. · Cash Flow Statement · confidential · Fictional example",
 }
 
 

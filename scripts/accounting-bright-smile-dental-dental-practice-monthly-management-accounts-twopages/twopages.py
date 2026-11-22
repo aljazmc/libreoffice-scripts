@@ -23,7 +23,7 @@ DESIGN = {
     "heading": "tint",
     "table": "lines",
     "body_align": "start",
-    "footer": "Bright Smile Dental Practice · Management Accounts",
+    "footer": "Bright Smile Dental Practice · Management Accounts · Fictional example",
 }
 
 

@@ -21,7 +21,7 @@ DESIGN = {
     "contact_join": " | ",
     "body_align": "start",
     "margin": 52,
-    "footer": "cv.md · rendered with LibreOffice, of all things",
+    "footer": "cv.md · rendered with LibreOffice, of all things · Fictional example",
     "density": "airy",
     "divider": "---",
 }

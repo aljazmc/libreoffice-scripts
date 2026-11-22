@@ -24,7 +24,7 @@ DESIGN = {
     "heading": "tint",
     "table": "zebra",
     "body_align": "start",
-    "footer": "NORTHBOUND FREIGHT LTD · Loan Amortisation Schedule",
+    "footer": "NORTHBOUND FREIGHT LTD · Loan Amortisation Schedule · Fictional example",
 }
 
 

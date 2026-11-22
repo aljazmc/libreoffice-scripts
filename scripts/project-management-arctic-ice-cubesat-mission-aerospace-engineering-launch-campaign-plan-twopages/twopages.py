@@ -29,7 +29,7 @@ DESIGN = {
     "info": "#3d7ea6",
     "radius": 0,
     "orientation": "landscape",
-    "footer": "FROSTBYTE-1 · Launch Campaign Plan · FB1-PM · Rev C",
+    "footer": "FROSTBYTE-1 · Launch Campaign Plan · FB1-PM · Rev C · Fictional example",
 }
 
 

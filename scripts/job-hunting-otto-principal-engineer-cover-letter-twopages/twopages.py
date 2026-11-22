@@ -21,7 +21,7 @@ DESIGN = {
     "contact_join": " | ",
     "body_align": "start",
     "margin": 52,
-    "footer": "letter.md",
+    "footer": "letter.md · Fictional example",
 }
 
 

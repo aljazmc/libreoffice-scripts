@@ -27,7 +27,7 @@ DESIGN = {
     "info": "#a78bfa",
     "grid": "#4a3361",
     "radius": 5,
-    "footer": "SALTMARSH SOUND 2027 · Crew Roster",
+    "footer": "SALTMARSH SOUND 2027 · Crew Roster · Fictional example",
 }
 
 

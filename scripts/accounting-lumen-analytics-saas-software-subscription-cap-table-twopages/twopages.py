@@ -23,7 +23,7 @@ DESIGN = {
     "heading": "tint",
     "table": "zebra",
     "body_align": "start",
-    "footer": "Lumen Analytics Inc. · Capitalisation Table · confidential",
+    "footer": "Lumen Analytics Inc. · Capitalisation Table · confidential · Fictional example",
 }
 
 

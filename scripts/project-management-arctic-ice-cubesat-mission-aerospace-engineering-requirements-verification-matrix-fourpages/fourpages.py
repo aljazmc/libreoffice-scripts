@@ -29,7 +29,7 @@ DESIGN = {
     "info": "#3d7ea6",
     "radius": 0,
     "footer": "FROSTBYTE-1 · Requirements Verification Matrix · FB1-PM · Rev "
-        "C",
+        "C · Fictional example",
 }
 
 

@@ -26,7 +26,7 @@ DESIGN = {
     "info": "#a78bfa",
     "grid": "#4a3361",
     "radius": 5,
-    "footer": "SALTMARSH SOUND 2027 · Production Budget",
+    "footer": "SALTMARSH SOUND 2027 · Production Budget · Fictional example",
 }
 
 

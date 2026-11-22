@@ -22,7 +22,7 @@ DESIGN = {
     "heading": "bar",
     "table": "lines",
     "body_align": "start",
-    "footer": "Lumen Analytics Inc. · Burn and Runway · confidential",
+    "footer": "Lumen Analytics Inc. · Burn and Runway · confidential · Fictional example",
 }
 
 

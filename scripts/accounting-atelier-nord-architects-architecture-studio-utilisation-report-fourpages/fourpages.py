@@ -21,7 +21,7 @@ DESIGN = {
     "heading": "bar",
     "table": "lines",
     "body_align": "start",
-    "footer": "Atelier Nord Architects · Utilisation Report",
+    "footer": "Atelier Nord Architects · Utilisation Report · Fictional example",
 }
 
 

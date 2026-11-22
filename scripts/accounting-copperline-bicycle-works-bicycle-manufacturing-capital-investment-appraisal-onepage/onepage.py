@@ -22,7 +22,7 @@ DESIGN = {
     "heading": "bar",
     "table": "lines",
     "body_align": "start",
-    "footer": "Copperline Bicycle Works · Capital Investment Appraisal",
+    "footer": "Copperline Bicycle Works · Capital Investment Appraisal · Fictional example",
 }
 
 

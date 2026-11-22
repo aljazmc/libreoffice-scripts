@@ -28,7 +28,7 @@ DESIGN = {
     "info": "#6bd5ff",
     "grid": "#2a3b55",
     "radius": 0,
-    "footer": "KEEPER OF THE LAST LIGHT · Postmortem · Tidepool Games",
+    "footer": "KEEPER OF THE LAST LIGHT · Postmortem · Tidepool Games · Fictional example",
 }
 
 

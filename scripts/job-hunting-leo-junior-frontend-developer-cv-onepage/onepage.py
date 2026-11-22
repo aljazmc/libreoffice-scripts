@@ -23,7 +23,7 @@ DESIGN = {
     "body_align": "start",
     "margin": 140,
     "dates_below": True,
-    "footer": "THANK YOU FOR READING · PLEASE KEEP THIS RECEIPT",
+    "footer": "THANK YOU FOR READING · PLEASE KEEP THIS RECEIPT · FICTIONAL EXAMPLE",
     "density": "compact",
 }
 

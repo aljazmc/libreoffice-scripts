@@ -25,7 +25,7 @@ DESIGN = {
     "info": "#2f5d62",
     "radius": 0,
     "subtitle_italic": True,
-    "footer": "The Abyss · Design Review Minutes · Museum of the North Sea",
+    "footer": "The Abyss · Design Review Minutes · Museum of the North Sea · Fictional example",
 }
 
 

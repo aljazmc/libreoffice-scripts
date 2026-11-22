@@ -22,7 +22,7 @@ DESIGN = {
     "separator": " ~ ",
     "contact_join": "  ✶  ",
     "body_align": "start",
-    "footer": "ruth okonkwo-lane · cv · photocopy freely",
+    "footer": "ruth okonkwo-lane · cv · photocopy freely · Fictional example",
     "density": "compact",
 }
 

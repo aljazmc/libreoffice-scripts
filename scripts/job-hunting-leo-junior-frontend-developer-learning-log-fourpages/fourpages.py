@@ -25,7 +25,7 @@ DESIGN = {
     "margin": 140,
     "dates_below": True,
     "heading_case": "upper",
-    "footer": "LEARNING LOG · SUBTOTAL: 2,100 HOURS",
+    "footer": "LEARNING LOG · SUBTOTAL: 2,100 HOURS · FICTIONAL EXAMPLE",
 }
 
 

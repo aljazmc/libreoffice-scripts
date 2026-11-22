@@ -27,7 +27,7 @@ DESIGN = {
     "info": "#4a6670",
     "radius": 0,
     "orientation": "landscape",
-    "footer": "Wharf Street HQ Move · Move Schedule",
+    "footer": "Wharf Street HQ Move · Move Schedule · Fictional example",
 }
 
 

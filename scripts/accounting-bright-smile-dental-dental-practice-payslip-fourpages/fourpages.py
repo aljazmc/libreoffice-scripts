@@ -27,7 +27,7 @@ DESIGN = {
     "density": "compact",
     "body_align": "start",
     "margin": 60,
-    "footer": "Bright Smile Dental Practice · Payslip",
+    "footer": "Bright Smile Dental Practice · Payslip · Fictional example",
 }
 
 

@@ -22,7 +22,7 @@ DESIGN = {
     "heading": "rule",
     "table": "lines",
     "body_align": "justify",
-    "footer": "Hollow Oak Estate Winery · Harvest Cost Allocation",
+    "footer": "Hollow Oak Estate Winery · Harvest Cost Allocation · Fictional example",
 }
 
 

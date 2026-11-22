@@ -23,7 +23,7 @@ DESIGN = {
     "heading": "plain",
     "table": "zebra",
     "body_align": "start",
-    "footer": "Hollow Oak Estate Winery · Purchase Order",
+    "footer": "Hollow Oak Estate Winery · Purchase Order · Fictional example",
 }
 
 

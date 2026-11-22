@@ -22,7 +22,7 @@ DESIGN = {
     "margin": 64,
     "heading_format": "{title}",
     "body_align": "justify",
-    "footer": "ZARA HADDAD · LETTER",
+    "footer": "ZARA HADDAD · LETTER · FICTIONAL EXAMPLE",
     "density": "spacious",
 }
 

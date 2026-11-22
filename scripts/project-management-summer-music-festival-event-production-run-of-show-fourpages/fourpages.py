@@ -28,7 +28,7 @@ DESIGN = {
     "grid": "#4a3361",
     "radius": 5,
     "orientation": "landscape",
-    "footer": "SALTMARSH SOUND 2027 · Run of Show",
+    "footer": "SALTMARSH SOUND 2027 · Run of Show · Fictional example",
 }
 
 

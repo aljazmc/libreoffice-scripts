@@ -24,7 +24,7 @@ DESIGN = {
     "heading": "rule",
     "table": "lines",
     "body_align": "start",
-    "footer": "Salt & Pine · a hotel by the dunes · RevPAR Performance",
+    "footer": "Salt & Pine · a hotel by the dunes · RevPAR Performance · Fictional example",
 }
 
 

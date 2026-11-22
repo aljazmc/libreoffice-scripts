@@ -20,7 +20,7 @@ DESIGN = {
     "bullet": "+",
     "separator": " — ",
     "contact_join": "   |   ",
-    "footer": "SHEET R-01 · SHOWREEL BREAKDOWN",
+    "footer": "SHEET R-01 · SHOWREEL BREAKDOWN · FICTIONAL EXAMPLE",
     "density": "spacious",
     "divider": "▸▸▸▸▸▸▸▸▸▸▸▸▸▸▸▸",
 }

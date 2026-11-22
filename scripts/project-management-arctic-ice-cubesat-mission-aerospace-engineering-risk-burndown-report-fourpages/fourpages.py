@@ -28,7 +28,7 @@ DESIGN = {
     "bad": "#c8102e",
     "info": "#3d7ea6",
     "radius": 0,
-    "footer": "FROSTBYTE-1 · Risk Burndown Report · FB1-PM · Rev C",
+    "footer": "FROSTBYTE-1 · Risk Burndown Report · FB1-PM · Rev C · Fictional example",
 }
 
 

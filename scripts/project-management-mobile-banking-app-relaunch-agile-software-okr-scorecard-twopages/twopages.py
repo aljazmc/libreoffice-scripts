@@ -23,7 +23,7 @@ DESIGN = {
     "bad": "#ef4444",
     "info": "#3b82f6",
     "radius": 4,
-    "footer": "Pocket Bank · OKR Scorecard · internal",
+    "footer": "Pocket Bank · OKR Scorecard · internal · Fictional example",
 }
 
 

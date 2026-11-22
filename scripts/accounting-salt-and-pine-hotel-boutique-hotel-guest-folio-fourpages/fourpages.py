@@ -24,7 +24,7 @@ DESIGN = {
     "table": "lines",
     "body_align": "start",
     "margin": 70,
-    "footer": "Salt & Pine · a hotel by the dunes · Guest Folio",
+    "footer": "Salt & Pine · a hotel by the dunes · Guest Folio · Fictional example",
 }
 
 

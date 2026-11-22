@@ -23,7 +23,7 @@ DESIGN = {
     "separator": " / ",
     "contact_join": " / ",
     "body_align": "start",
-    "footer": "PROCESS BOOK / “HOW A VIRUS TRAVELS”",
+    "footer": "PROCESS BOOK / “HOW A VIRUS TRAVELS” · FICTIONAL EXAMPLE",
     "density": "spacious",
 }
 

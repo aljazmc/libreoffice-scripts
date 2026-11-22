@@ -24,7 +24,7 @@ DESIGN = {
     "table": "lines",
     "body_align": "justify",
     "footer": "Open Shelf Library Trust · registered charity 1187342 · "
-        "Statement of Financial Activities",
+        "Statement of Financial Activities · Fictional example",
 }
 
 

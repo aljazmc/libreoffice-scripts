@@ -21,7 +21,7 @@ DESIGN = {
     "separator": " // ",
     "contact_join": "  //  ",
     "body_align": "start",
-    "footer": "MAKS KOVAČ // CV // RENDERED AT 90 FPS",
+    "footer": "MAKS KOVAČ // CV // RENDERED AT 90 FPS · FICTIONAL EXAMPLE",
 }
 
 

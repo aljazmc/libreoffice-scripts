@@ -25,7 +25,7 @@ DESIGN = {
     "radius": 0,
     "chart_title_case": "upper",
     "density": "compact",
-    "footer": "HBR-24 · Earned Value Report · Port Aldwick City Works",
+    "footer": "HBR-24 · Earned Value Report · Port Aldwick City Works · Fictional example",
 }
 
 

@@ -24,7 +24,7 @@ DESIGN = {
     "table": "lines",
     "body_align": "justify",
     "footer": "Rye & Crumb Ltd · Profit and Loss Statement · company no. "
-        "11829304",
+        "11829304 · Fictional example",
 }
 
 

@@ -25,7 +25,7 @@ DESIGN = {
     "info": "#4c8db5",
     "radius": 1,
     "footer": "Northgate Offshore Wind · Consent Tracker · Commercial in "
-        "confidence",
+        "confidence · Fictional example",
 }
 
 

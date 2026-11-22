@@ -27,7 +27,7 @@ DESIGN = {
     "density": "compact",
     "body_align": "start",
     "footer": "Rye & Crumb Ltd · Daily Till Reconciliation · company no. "
-        "11829304",
+        "11829304 · Fictional example",
 }
 
 

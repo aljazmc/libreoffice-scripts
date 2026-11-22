@@ -25,7 +25,7 @@ DESIGN = {
     "table": "grid",
     "density": "compact",
     "body_align": "start",
-    "footer": "Hollow Oak Estate Winery · Excise Duty Return",
+    "footer": "Hollow Oak Estate Winery · Excise Duty Return · Fictional example",
 }
 
 

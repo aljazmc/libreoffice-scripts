@@ -23,7 +23,7 @@ DESIGN = {
     "body_align": "start",
     "margin": 50,
     "heading_format": "▶ {title}",
-    "footer": "PRESS START · LETTER TO MOONFISH GAMES",
+    "footer": "PRESS START · LETTER TO MOONFISH GAMES · FICTIONAL EXAMPLE",
     "density": "spacious",
 }
 

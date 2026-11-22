@@ -25,7 +25,7 @@ DESIGN = {
     "chart_font": "Liberation Sans Narrow",
     "density": "compact",
     "body_align": "start",
-    "footer": "Tidewear Outdoor Ltd · Inventory Valuation",
+    "footer": "Tidewear Outdoor Ltd · Inventory Valuation · Fictional example",
 }
 
 

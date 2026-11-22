@@ -22,7 +22,7 @@ DESIGN = {
     "separator": " ~ ",
     "contact_join": "  ✶  ",
     "body_align": "justify",
-    "footer": "ruth okonkwo-lane · a letter",
+    "footer": "ruth okonkwo-lane · a letter · Fictional example",
     "density": "spacious",
     "divider": "✶   ✶   ✶",
 }

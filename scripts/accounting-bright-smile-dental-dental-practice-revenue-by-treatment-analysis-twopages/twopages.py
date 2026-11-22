@@ -23,7 +23,7 @@ DESIGN = {
     "heading": "plain",
     "table": "lines",
     "body_align": "start",
-    "footer": "Bright Smile Dental Practice · Revenue by Treatment",
+    "footer": "Bright Smile Dental Practice · Revenue by Treatment · Fictional example",
 }
 
 

@@ -24,7 +24,7 @@ DESIGN = {
     "table": "lines",
     "body_align": "justify",
     "footer": "Salt & Pine · a hotel by the dunes · Departmental Profit and "
-        "Loss",
+        "Loss · Fictional example",
 }
 
 

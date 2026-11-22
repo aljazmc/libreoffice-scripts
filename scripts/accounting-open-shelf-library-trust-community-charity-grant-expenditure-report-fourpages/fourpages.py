@@ -24,7 +24,7 @@ DESIGN = {
     "table": "lines",
     "body_align": "start",
     "footer": "Open Shelf Library Trust · registered charity 1187342 · Grant "
-        "Expenditure Report",
+        "Expenditure Report · Fictional example",
 }
 
 

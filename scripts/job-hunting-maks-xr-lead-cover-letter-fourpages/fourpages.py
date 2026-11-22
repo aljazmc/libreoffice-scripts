@@ -21,7 +21,7 @@ DESIGN = {
     "separator": " // ",
     "contact_join": "  //  ",
     "body_align": "start",
-    "footer": "MAKS KOVAČ // LETTER",
+    "footer": "MAKS KOVAČ // LETTER · FICTIONAL EXAMPLE",
     "density": "spacious",
 }
 

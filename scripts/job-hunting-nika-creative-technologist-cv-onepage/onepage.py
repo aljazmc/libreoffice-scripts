@@ -22,7 +22,7 @@ DESIGN = {
     "body_align": "start",
     "margin": 50,
     "heading_format": "$ cat ~/{slug}.txt",
-    "footer": "nika@ljubljana:~$ less cv.txt",
+    "footer": "nika@ljubljana:~$ less cv.txt · Fictional example",
     "density": "compact",
 }
 

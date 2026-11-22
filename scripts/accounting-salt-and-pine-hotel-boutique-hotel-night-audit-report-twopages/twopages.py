@@ -26,7 +26,7 @@ DESIGN = {
     "table": "grid",
     "density": "compact",
     "body_align": "start",
-    "footer": "Salt & Pine · a hotel by the dunes · Night Audit",
+    "footer": "Salt & Pine · a hotel by the dunes · Night Audit · Fictional example",
 }
 
 

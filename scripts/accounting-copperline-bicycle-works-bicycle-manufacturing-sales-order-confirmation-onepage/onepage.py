@@ -22,7 +22,7 @@ DESIGN = {
     "table": "zebra",
     "body_align": "start",
     "margin": 60,
-    "footer": "Copperline Bicycle Works · Sales Order Confirmation",
+    "footer": "Copperline Bicycle Works · Sales Order Confirmation · Fictional example",
 }
 
 

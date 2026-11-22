@@ -22,7 +22,7 @@ DESIGN = {
     "heading_case": "upper",
     "table": "lines",
     "body_align": "start",
-    "footer": "Tidewear Outdoor Ltd · Income Statement by Channel",
+    "footer": "Tidewear Outdoor Ltd · Income Statement by Channel · Fictional example",
 }
 
 

@@ -24,7 +24,7 @@ DESIGN = {
     "bad": "#da291c",
     "info": "#41b6e6",
     "radius": 2,
-    "footer": "St Brigid's University Hospital · Go-Live Readiness · OFFICIAL",
+    "footer": "St Brigid's University Hospital · Go-Live Readiness · OFFICIAL · Fictional example",
 }
 
 

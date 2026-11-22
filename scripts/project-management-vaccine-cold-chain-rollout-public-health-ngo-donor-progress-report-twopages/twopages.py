@@ -25,7 +25,7 @@ DESIGN = {
     "info": "#00a1de",
     "radius": 1,
     "footer": "Cold Chain for Every Child · Donor Progress Report · not for "
-        "publication",
+        "publication · Fictional example",
 }
 
 

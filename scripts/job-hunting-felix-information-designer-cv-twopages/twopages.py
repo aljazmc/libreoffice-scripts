@@ -23,7 +23,7 @@ DESIGN = {
     "separator": " / ",
     "contact_join": " / ",
     "body_align": "start",
-    "footer": "FELIX AMADI / CV / ZÜRICH 2026",
+    "footer": "FELIX AMADI / CV / ZÜRICH 2026 · FICTIONAL EXAMPLE",
 }
 
 

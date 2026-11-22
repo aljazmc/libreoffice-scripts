@@ -21,7 +21,7 @@ DESIGN = {
     "separator": " // ",
     "contact_join": "  //  ",
     "body_align": "start",
-    "footer": "PROTOTYPE LOG // MAKS KOVAČ",
+    "footer": "PROTOTYPE LOG // MAKS KOVAČ · FICTIONAL EXAMPLE",
 }
 
 

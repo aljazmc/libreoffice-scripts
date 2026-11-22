@@ -23,7 +23,7 @@ DESIGN = {
     "bad": "#ef4444",
     "info": "#3b82f6",
     "radius": 4,
-    "footer": "Pocket Bank · Product Roadmap · internal",
+    "footer": "Pocket Bank · Product Roadmap · internal · Fictional example",
 }
 
 

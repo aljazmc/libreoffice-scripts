@@ -22,7 +22,7 @@ DESIGN = {
     "body_align": "start",
     "margin": 50,
     "heading_format": "> sketch_{number:02d}: {slug}",
-    "footer": "nika@ljubljana:~/sketches$ ls -la",
+    "footer": "nika@ljubljana:~/sketches$ ls -la · Fictional example",
     "divider": "∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿",
 }
 

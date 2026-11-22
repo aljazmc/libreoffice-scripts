@@ -20,7 +20,7 @@ DESIGN = {
     "separator": " · ",
     "contact_join": "  ·  ",
     "margin": 62,
-    "footer": "Yuki Mori · Curriculum Vitae · tempo rubato",
+    "footer": "Yuki Mori · Curriculum Vitae · tempo rubato · Fictional example",
 }
 
 

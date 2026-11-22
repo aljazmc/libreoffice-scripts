@@ -24,7 +24,7 @@ DESIGN = {
     "table": "zebra",
     "chart_font": "Liberation Sans Narrow",
     "body_align": "start",
-    "footer": "Atelier Nord Architects · Work in Progress Schedule",
+    "footer": "Atelier Nord Architects · Work in Progress Schedule · Fictional example",
 }
 
 

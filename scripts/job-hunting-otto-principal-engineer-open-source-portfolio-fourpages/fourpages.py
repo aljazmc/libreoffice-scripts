@@ -21,7 +21,7 @@ DESIGN = {
     "contact_join": " | ",
     "body_align": "start",
     "margin": 52,
-    "footer": "PORTFOLIO.md · MIT licensed",
+    "footer": "PORTFOLIO.md · MIT licensed · Fictional example",
     "density": "airy",
     "divider": "* * *",
 }

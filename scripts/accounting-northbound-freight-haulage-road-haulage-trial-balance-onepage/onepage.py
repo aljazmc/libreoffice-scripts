@@ -26,7 +26,7 @@ DESIGN = {
     "density": "compact",
     "body_align": "start",
     "title_size": 20,
-    "footer": "NORTHBOUND FREIGHT LTD · Trial Balance",
+    "footer": "NORTHBOUND FREIGHT LTD · Trial Balance · Fictional example",
 }
 
 

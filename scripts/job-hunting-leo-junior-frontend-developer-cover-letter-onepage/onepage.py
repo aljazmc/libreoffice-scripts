@@ -23,7 +23,7 @@ DESIGN = {
     "body_align": "start",
     "margin": 120,
     "dates_below": True,
-    "footer": "LETTER · NO REFUNDS · LOTS OF ENTHUSIASM",
+    "footer": "LETTER · NO REFUNDS · LOTS OF ENTHUSIASM · FICTIONAL EXAMPLE",
 }
 
 

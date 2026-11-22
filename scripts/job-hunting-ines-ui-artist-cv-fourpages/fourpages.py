@@ -23,7 +23,7 @@ DESIGN = {
     "body_align": "start",
     "margin": 50,
     "heading_format": "▶ LEVEL {number}-1 · {title}",
-    "footer": "INSERT COIN TO CONTINUE · INÊS DUARTE · CV",
+    "footer": "INSERT COIN TO CONTINUE · INÊS DUARTE · CV · FICTIONAL EXAMPLE",
     "divider": "★ ☆ ★ ☆ ★ ☆ ★",
     "density": "airy",
 }

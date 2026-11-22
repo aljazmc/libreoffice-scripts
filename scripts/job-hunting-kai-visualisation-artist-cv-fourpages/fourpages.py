@@ -20,7 +20,7 @@ DESIGN = {
     "bullet": "+",
     "separator": " — ",
     "contact_join": "   |   ",
-    "footer": "SHEET A-01 · KAI BERG · CV",
+    "footer": "SHEET A-01 · KAI BERG · CV · FICTIONAL EXAMPLE",
     "density": "spacious",
     "divider": "┼──────────────┼──────────────┼",
 }

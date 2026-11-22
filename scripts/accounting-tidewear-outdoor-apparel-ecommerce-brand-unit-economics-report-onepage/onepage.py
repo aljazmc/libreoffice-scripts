@@ -23,7 +23,7 @@ DESIGN = {
     "heading": "bar",
     "table": "lines",
     "body_align": "start",
-    "footer": "Tidewear Outdoor Ltd · Unit Economics",
+    "footer": "Tidewear Outdoor Ltd · Unit Economics · Fictional example",
 }
 
 

@@ -20,7 +20,7 @@ DESIGN = {
     "contact_join": "   ·   ",
     "margin": 64,
     "heading_format": "Reel {number} · {title}",
-    "footer": "ZARA HADDAD · CURRICULUM VITAE · ALL RIGHTS RESERVED",
+    "footer": "ZARA HADDAD · CURRICULUM VITAE · ALL RIGHTS RESERVED · FICTIONAL EXAMPLE",
     "density": "compact",
 }
 

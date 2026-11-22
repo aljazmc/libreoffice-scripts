@@ -24,7 +24,7 @@ DESIGN = {
     "table": "grid",
     "density": "compact",
     "body_align": "start",
-    "footer": "Bright Smile Dental Practice · Bank Reconciliation",
+    "footer": "Bright Smile Dental Practice · Bank Reconciliation · Fictional example",
 }
 
 

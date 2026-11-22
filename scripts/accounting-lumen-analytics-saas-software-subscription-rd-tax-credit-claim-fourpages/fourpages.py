@@ -24,7 +24,7 @@ DESIGN = {
     "table": "grid",
     "density": "compact",
     "body_align": "start",
-    "footer": "Lumen Analytics Inc. · R&D Tax Credit Claim · confidential",
+    "footer": "Lumen Analytics Inc. · R&D Tax Credit Claim · confidential · Fictional example",
 }
 
 

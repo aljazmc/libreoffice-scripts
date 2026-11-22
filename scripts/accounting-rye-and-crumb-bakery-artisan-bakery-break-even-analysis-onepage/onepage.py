@@ -23,7 +23,7 @@ DESIGN = {
     "heading": "slab",
     "table": "lines",
     "body_align": "start",
-    "footer": "Rye & Crumb Ltd · Break-Even Analysis · company no. 11829304",
+    "footer": "Rye & Crumb Ltd · Break-Even Analysis · company no. 11829304 · Fictional example",
 }
 
 

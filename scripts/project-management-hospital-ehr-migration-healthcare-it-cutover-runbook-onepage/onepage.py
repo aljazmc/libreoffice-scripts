@@ -24,7 +24,7 @@ DESIGN = {
     "info": "#41b6e6",
     "radius": 2,
     "orientation": "landscape",
-    "footer": "St Brigid's University Hospital · Cutover Runbook · OFFICIAL",
+    "footer": "St Brigid's University Hospital · Cutover Runbook · OFFICIAL · Fictional example",
 }
 
 

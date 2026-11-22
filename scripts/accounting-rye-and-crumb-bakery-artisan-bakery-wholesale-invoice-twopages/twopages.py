@@ -24,7 +24,7 @@ DESIGN = {
     "table": "zebra",
     "body_align": "start",
     "margin": 56,
-    "footer": "Rye & Crumb Ltd · Invoice · company no. 11829304",
+    "footer": "Rye & Crumb Ltd · Invoice · company no. 11829304 · Fictional example",
 }
 
 

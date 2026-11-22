@@ -24,7 +24,7 @@ DESIGN = {
     "info": "#41b6e6",
     "radius": 2,
     "footer": "St Brigid's University Hospital · Data Migration Report · "
-        "OFFICIAL",
+        "OFFICIAL · Fictional example",
 }
 
 

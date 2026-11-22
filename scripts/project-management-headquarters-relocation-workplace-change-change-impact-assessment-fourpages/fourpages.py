@@ -27,7 +27,7 @@ DESIGN = {
     "bad": "#b23a2b",
     "info": "#4a6670",
     "radius": 0,
-    "footer": "Wharf Street HQ Move · Change Impact Assessment",
+    "footer": "Wharf Street HQ Move · Change Impact Assessment · Fictional example",
 }
 
 

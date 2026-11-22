@@ -24,7 +24,7 @@ DESIGN = {
     "table": "grid",
     "density": "compact",
     "body_align": "start",
-    "footer": "Tidewear Outdoor Ltd · VAT Return",
+    "footer": "Tidewear Outdoor Ltd · VAT Return · Fictional example",
 }
 
 

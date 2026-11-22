@@ -23,7 +23,7 @@ DESIGN = {
     "bad": "#da291c",
     "info": "#41b6e6",
     "radius": 2,
-    "footer": "St Brigid's University Hospital · RACI Matrix · OFFICIAL",
+    "footer": "St Brigid's University Hospital · RACI Matrix · OFFICIAL · Fictional example",
 }
 
 

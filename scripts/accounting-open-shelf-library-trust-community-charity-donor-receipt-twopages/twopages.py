@@ -26,7 +26,7 @@ DESIGN = {
     "margin": 76,
     "title_size": 22,
     "footer": "Open Shelf Library Trust · registered charity 1187342 · "
-        "Donation Receipt",
+        "Donation Receipt · Fictional example",
 }
 
 

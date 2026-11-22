@@ -23,7 +23,7 @@ DESIGN = {
     "separator": " / ",
     "contact_join": " / ",
     "body_align": "start",
-    "footer": "FELIX AMADI / LETTER",
+    "footer": "FELIX AMADI / LETTER · FICTIONAL EXAMPLE",
     "density": "spacious",
 }
 

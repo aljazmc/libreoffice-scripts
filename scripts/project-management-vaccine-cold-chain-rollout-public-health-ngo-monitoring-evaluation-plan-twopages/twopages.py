@@ -25,7 +25,7 @@ DESIGN = {
     "info": "#00a1de",
     "radius": 1,
     "footer": "Cold Chain for Every Child · Monitoring and Evaluation Plan · "
-        "not for publication",
+        "not for publication · Fictional example",
 }
 
 

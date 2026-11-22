@@ -26,7 +26,7 @@ DESIGN = {
     "density": "compact",
     "body_align": "start",
     "footer": "Open Shelf Library Trust · registered charity 1187342 · Gift "
-        "Aid Claim",
+        "Aid Claim · Fictional example",
 }
 
 

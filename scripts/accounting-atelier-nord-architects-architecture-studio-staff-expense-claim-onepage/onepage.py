@@ -24,7 +24,7 @@ DESIGN = {
     "table": "grid",
     "density": "compact",
     "body_align": "start",
-    "footer": "Atelier Nord Architects · Expense Claim",
+    "footer": "Atelier Nord Architects · Expense Claim · Fictional example",
 }
 
 

@@ -24,7 +24,7 @@ DESIGN = {
     "table": "lines",
     "body_align": "justify",
     "margin": 70,
-    "footer": "Atelier Nord Architects · Partner Capital Account Statement",
+    "footer": "Atelier Nord Architects · Partner Capital Account Statement · Fictional example",
 }
 
 

@@ -23,7 +23,7 @@ DESIGN = {
     "heading": "rule",
     "table": "lines",
     "body_align": "justify",
-    "footer": "Copperline Bicycle Works · Manufacturing Account",
+    "footer": "Copperline Bicycle Works · Manufacturing Account · Fictional example",
 }
 
 

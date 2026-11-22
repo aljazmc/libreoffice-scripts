@@ -24,7 +24,7 @@ DESIGN = {
     "table": "zebra",
     "body_align": "start",
     "footer": "Open Shelf Library Trust · registered charity 1187342 · "
-        "Restricted Funds Register",
+        "Restricted Funds Register · Fictional example",
 }
 
 

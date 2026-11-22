@@ -24,7 +24,7 @@ DESIGN = {
     "table": "grid",
     "density": "compact",
     "body_align": "start",
-    "footer": "Copperline Bicycle Works · Year-End Close Checklist",
+    "footer": "Copperline Bicycle Works · Year-End Close Checklist · Fictional example",
 }
 
 

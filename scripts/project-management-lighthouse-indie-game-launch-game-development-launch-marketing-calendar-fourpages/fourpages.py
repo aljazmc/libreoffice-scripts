@@ -30,7 +30,7 @@ DESIGN = {
     "grid": "#2a3b55",
     "radius": 0,
     "footer": "KEEPER OF THE LAST LIGHT · Launch Marketing Calendar · "
-        "Tidepool Games",
+        "Tidepool Games · Fictional example",
 }
 
 

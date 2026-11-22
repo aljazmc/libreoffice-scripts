@@ -27,7 +27,7 @@ DESIGN = {
     "chart_title_case": "upper",
     "density": "compact",
     "orientation": "landscape",
-    "footer": "HBR-24 · Three-Week Lookahead · Port Aldwick City Works",
+    "footer": "HBR-24 · Three-Week Lookahead · Port Aldwick City Works · Fictional example",
 }
 
 

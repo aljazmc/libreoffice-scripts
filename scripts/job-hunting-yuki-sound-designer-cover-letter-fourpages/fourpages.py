@@ -20,7 +20,7 @@ DESIGN = {
     "separator": " · ",
     "contact_join": "  ·  ",
     "margin": 62,
-    "footer": "Yuki Mori · letter · andante",
+    "footer": "Yuki Mori · letter · andante · Fictional example",
     "density": "spacious",
 }
 

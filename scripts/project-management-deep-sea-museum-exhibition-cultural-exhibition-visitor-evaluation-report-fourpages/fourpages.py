@@ -27,7 +27,7 @@ DESIGN = {
     "radius": 0,
     "subtitle_italic": True,
     "footer": "The Abyss · Visitor Evaluation Report · Museum of the North "
-        "Sea",
+        "Sea · Fictional example",
 }
 
 

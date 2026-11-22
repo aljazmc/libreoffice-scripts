@@ -22,7 +22,7 @@ DESIGN = {
     "contact_join": "  ✶  ",
     "body_align": "start",
     "divider": "✶   ✶   ✶",
-    "footer": "artist statement · ruth okonkwo-lane",
+    "footer": "artist statement · ruth okonkwo-lane · Fictional example",
     "density": "spacious",
 }
 

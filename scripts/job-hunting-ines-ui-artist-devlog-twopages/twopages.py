@@ -23,7 +23,7 @@ DESIGN = {
     "body_align": "start",
     "margin": 50,
     "heading_format": "◆ {title}",
-    "footer": "SAUDADE STATION · DEVLOG",
+    "footer": "SAUDADE STATION · DEVLOG · FICTIONAL EXAMPLE",
 }
 
 

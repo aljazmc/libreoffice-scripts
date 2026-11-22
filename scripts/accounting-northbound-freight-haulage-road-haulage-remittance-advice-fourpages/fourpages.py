@@ -23,7 +23,7 @@ DESIGN = {
     "table": "zebra",
     "body_align": "start",
     "margin": 60,
-    "footer": "NORTHBOUND FREIGHT LTD · Remittance Advice",
+    "footer": "NORTHBOUND FREIGHT LTD · Remittance Advice · Fictional example",
 }
 
 

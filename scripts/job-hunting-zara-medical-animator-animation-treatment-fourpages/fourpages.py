@@ -19,7 +19,7 @@ DESIGN = {
     "bullet_width": 18,
     "body_align": "start",
     "margin": 72,
-    "footer": "“A Valve, Replaced” · treatment draft 3 · Zara Haddad",
+    "footer": "“A Valve, Replaced” · treatment draft 3 · Zara Haddad · Fictional example",
     "density": "airy",
 }
 

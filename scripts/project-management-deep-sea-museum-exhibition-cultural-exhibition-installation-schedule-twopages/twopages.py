@@ -26,7 +26,7 @@ DESIGN = {
     "info": "#2f5d62",
     "radius": 0,
     "subtitle_italic": True,
-    "footer": "The Abyss · Installation Schedule · Museum of the North Sea",
+    "footer": "The Abyss · Installation Schedule · Museum of the North Sea · Fictional example",
 }
 
 

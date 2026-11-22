@@ -23,7 +23,7 @@ DESIGN = {
     "heading_format": "{roman}. {title}",
     "table": "lines",
     "body_align": "justify",
-    "footer": "Hollow Oak Estate Winery · Balance Sheet",
+    "footer": "Hollow Oak Estate Winery · Balance Sheet · Fictional example",
 }
 
 

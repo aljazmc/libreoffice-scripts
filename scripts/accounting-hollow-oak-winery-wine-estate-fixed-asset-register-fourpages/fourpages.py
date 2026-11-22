@@ -25,7 +25,7 @@ DESIGN = {
     "table": "zebra",
     "density": "compact",
     "body_align": "start",
-    "footer": "Hollow Oak Estate Winery · Fixed Asset Register",
+    "footer": "Hollow Oak Estate Winery · Fixed Asset Register · Fictional example",
 }
 
 

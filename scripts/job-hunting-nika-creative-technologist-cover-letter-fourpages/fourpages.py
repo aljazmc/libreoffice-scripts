@@ -22,7 +22,7 @@ DESIGN = {
     "body_align": "start",
     "margin": 50,
     "heading_format": "// {title}",
-    "footer": "nika@ljubljana:~$ cat letter.txt",
+    "footer": "nika@ljubljana:~$ cat letter.txt · Fictional example",
     "density": "airy",
 }
 

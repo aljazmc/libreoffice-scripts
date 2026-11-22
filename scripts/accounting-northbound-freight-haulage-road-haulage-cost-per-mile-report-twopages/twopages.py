@@ -25,7 +25,7 @@ DESIGN = {
     "heading_case": "upper",
     "table": "lines",
     "body_align": "start",
-    "footer": "NORTHBOUND FREIGHT LTD · Cost per Mile",
+    "footer": "NORTHBOUND FREIGHT LTD · Cost per Mile · Fictional example",
 }
 
 
