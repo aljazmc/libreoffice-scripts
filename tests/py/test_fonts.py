@@ -17,9 +17,9 @@ LibreOffice cannot find is replaced by another with other widths.
   is not built or older than the project's scripts, and without pdffonts
   (poppler-utils) and fc-list.
 
-Run: python3 -m unittest tests.test_fonts             # everything
-     python3 -m unittest tests.test_fonts -k design    # the designs only
-     python3 -m unittest tests.test_fonts -k cv-onepage  # some projects
+Run: python3 -m unittest discover tests/py -p test_fonts.py                 # everything
+     python3 -m unittest discover tests/py -p test_fonts.py -k design       # the designs only
+     python3 -m unittest discover tests/py -p test_fonts.py -k cv-onepage   # some projects
 """
 import functools
 import importlib

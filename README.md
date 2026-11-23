@@ -31,7 +31,7 @@ four.
 - **Charts as vector graphics:** gantt, waterfall, sankey, risk heat map,
   gauges, funnel and eleven more, drawn as SVG, so they stay sharp in
   every format.
-- **33 output formats**, from `pdf`, `docx` and `odf` to `epub`, `html`,
+- **34 output formats**, from `pdf`, `docx` and `odf` to `epub`, `html`,
   `svg` and `png`.
 - **Standard library only.** No Python packages, nothing to install but
   LibreOffice and the fonts.
@@ -282,26 +282,51 @@ depend on the length, e.g. `{1: 150, 2: 170, 4: 190}`.
 ## Tests
 
 ```sh
-bash tests/test_project.sh                        # project.sh
-python3 -m unittest discover tests                # all Python tests
-python3 -m unittest tests.test_pages -k cv-onepage  # the page tests of some projects
+for test in tests/sh/test_*.sh; do bash "$test"; done            # project.sh
+python3 -m unittest discover tests/py                            # all Python tests
+python3 -m unittest discover tests/py -p test_pages.py -k cv-onepage  # the page tests of some projects
+EXPORTS='job-hunting-*' python3 -m unittest discover tests/py -p test_exports.py
 ```
 
-The tests need only bash and Python's standard library.
+The tests are split by language: `tests/sh/` tests `project.sh` with bash,
+`tests/py/` tests the Python scripts and the documents they typeset. Apart
+from the export tests, they need only bash and Python's standard library,
+and none of them writes outputs into the repository.
 
-- `tests/test_project.sh` checks that `project.sh` rejects bad arguments
+The tests of `project.sh` run it in a temporary sandbox, with a few fake
+projects and stand-ins for `python3` and `soffice` (see `tests/sh/lib.sh`),
+so they typeset nothing and never touch `build/` or `odf/`:
+
+- `tests/sh/test_project.sh` checks that `project.sh` rejects bad arguments
   with its usage and exit code 1.
-- `tests/test_common.py` checks that `filter_data()` gives each filter
+- `tests/sh/test_formats.sh` checks that the formats of `project.sh`, the
+  exporters in `scripts/` and this README agree: every format has an
+  exporter that writes its own file, every exporter is listed, the Formats
+  table names every format and the count of formats is right, and exactly
+  the image and drawing formats go through LibreOffice Draw.
+- `tests/sh/test_outputs.sh` checks the names of the outputs, as described
+  under Usage, through the `clean` commands, including the `.xml` of
+  `docbook` and `wordxml` and the `.odt` of `odf`.
+- `tests/sh/test_run.sh` checks that `project.sh` runs the right script
+  with the project in `PROJECT` and `scripts/` first on the `PYTHONPATH`,
+  for one project and for `all`, never for the shared typesetters, and from
+  any directory; that it skips existing outputs, reports a failed export
+  with exit code 1 and stops when `soffice` or `python3` is missing.
+
+The Python tests build each project as `project.sh` does, in a separate
+Python process (see `tests/py/documents.py`):
+
+- `tests/py/test_common.py` checks that `filter_data()` gives each filter
   setting the type LibreOffice expects, including booleans, which Python
   also counts as integers.
-- `tests/test_pages.py` gives every project two tests. The estimate test
+- `tests/py/test_pages.py` gives every project two tests. The estimate test
   checks that the typesetter's own estimate fills exactly the pages the
   name promises; it needs no LibreOffice and takes a fraction of a second.
   The PDF test reads the page count of `build/<project>.pdf`, the document
   Writer really produced, and is skipped when the PDF is not built or is
   older than its scripts. Pick projects with `-k`, or only one kind with
   `-k estimate` or `-k test_pdf`.
-- `tests/test_fonts.py` checks the fonts. The typesetters' width tables
+- `tests/py/test_fonts.py` checks the fonts. The typesetters' width tables
   must agree and every font must have a license named in this README;
   every font a project's `DESIGN` names must have a width in its
   typesetter; every font must be installed; and every built PDF must embed
@@ -309,14 +334,39 @@ The tests need only bash and Python's standard library.
   picked for a missing font. The last two use `fc-list` and `pdffonts`
   (poppler-utils), and are skipped where those, the PDF or, on CI, the
   fonts are missing.
-- `tests/test_fiction.py` checks that the footer of every example project
+- `tests/py/test_fiction.py` checks that the footer of every example project
   ends with "Fictional example", the notice printed on every page.
+- `tests/py/test_document.py` reads every document's flat ODT without
+  LibreOffice: a text document with a title (the PDF's title) and a
+  language (its hyphenation, and what a screen reader speaks), every style,
+  page layout and font it names defined (LibreOffice quietly replaces a
+  missing one), an A4 or Letter page, either way up, whose margins leave
+  room for the text, tables and charts no wider than the text, charts that
+  are valid SVG inside the document, and the same document on every build.
+- `tests/py/test_readability.py` follows every piece of text to its color,
+  size and what it is printed on (the table cell, the paragraph or the
+  page): its contrast must be at least 2:1, which catches text that can't
+  be read at all (WCAG AA asks 4.5:1 for body text, which a third of the
+  designs don't reach yet); it must be at least 6 pt; and no paragraph may
+  hold an unfilled `{placeholder}`, an unformatted `None` or `nan`, or a
+  `TODO` or lorem ipsum.
+- `tests/py/test_exports.py` runs every export script on a temporary copy
+  of `scripts/` and checks each file by what is inside it: the PDF has the
+  pages the name promises, the Writer formats (`odf`, `docx`, `doc`, `rtf`,
+  `html`, `epub`, `txt`...) keep the document's words and their document
+  type, the images come out at the size their script asks for, and the
+  drawings carry their format's signature. Every format needs a check of
+  its own, so a new format can't go untested. It exports the projects shown
+  in `gallery/`, or those `EXPORTS` names (a pattern, or `all`), in about
+  15 seconds each, and needs `soffice` and Pillow, so CI skips it. `apng`
+  is skipped for its size: LibreOffice's APNG filter ignores the size it
+  is asked for.
 
 Lint the code with [ShellCheck](https://www.shellcheck.net/) and
 [Ruff](https://docs.astral.sh/ruff/):
 
 ```sh
-shellcheck project.sh tests/*.sh
+shellcheck project.sh tests/sh/*.sh
 ruff check .
 ```
 

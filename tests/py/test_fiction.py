@@ -5,7 +5,7 @@ so the footer of each, which is printed on every page, ends with
 "Fictional example". Projects whose name starts with "aljazmc" describe a
 real person and must not carry the notice.
 
-Run: python3 -m unittest tests.test_fiction
+Run: python3 -m unittest discover tests/py -p test_fiction.py
 """
 import sys
 import unittest

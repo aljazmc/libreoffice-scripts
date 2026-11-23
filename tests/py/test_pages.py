@@ -9,10 +9,10 @@ Each project gets two tests of its own:
   Writer really produced. Skipped when the PDF has not been built, or is
   older than the project's scripts.
 
-Run: python3 -m unittest tests.test_pages             # every project
-     python3 -m unittest tests.test_pages -k cv-onepage  # some projects
-     python3 -m unittest tests.test_pages -k estimate    # estimates only
-     python3 -m unittest tests.test_pages -k test_pdf    # built PDFs only
+Run: python3 -m unittest discover tests/py -p test_pages.py                 # every project
+     python3 -m unittest discover tests/py -p test_pages.py -k cv-onepage   # some projects
+     python3 -m unittest discover tests/py -p test_pages.py -k estimate     # estimates only
+     python3 -m unittest discover tests/py -p test_pages.py -k test_pdf     # built PDFs only
 
 The estimate checks the typesetting, not Writer: a PDF can still come out a
 page longer if the estimate is wrong, which only the PDF test shows.
@@ -23,7 +23,7 @@ import sys
 import unittest
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS = ROOT / "scripts"
 BUILD = ROOT / "build"
 sys.path.insert(0, str(SCRIPTS))
