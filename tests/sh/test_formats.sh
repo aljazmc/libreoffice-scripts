@@ -19,7 +19,7 @@ if [ "${#known[@]}" -lt 30 ]; then
 fi
 
 # the README's Images and Drawings rows: what Draw converts
-drawn=" $(grep -E '^\| (Images|Drawings) \|' README.md | grep -oE '`[a-z]+`' | tr -d '`' | paste -sd' ') "
+drawn=" $(grep -E '^\| (Images|Drawings) \|' README.md | grep -oE "\`[a-z]+\`" | tr -d '`' | paste -sd' ') "
 
 for format in "${known[@]}"; do
     script="scripts/export$format.py"
@@ -53,7 +53,7 @@ for script in scripts/export*.py; do
 done
 
 check "scripts/saveodf.py saves the ODT into odf/" grep -qF 'load_project("odf")' scripts/saveodf.py
-check "the README lists odf" grep -qE '^\|.*`odf`' README.md
+check "the README lists odf" grep -qE "^\|.*\`odf\`" README.md
 
 # every format and odf
 outputs=$(( ${#known[@]} + 1 ))
