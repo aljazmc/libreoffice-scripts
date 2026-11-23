@@ -22,6 +22,7 @@ import unittest
 import xml.etree.ElementTree as ET
 import zipfile
 from concurrent.futures import ThreadPoolExecutor
+from functools import partial
 from pathlib import Path
 
 import documents
@@ -287,7 +288,7 @@ def export(tmp, project, format):
     """Run one export script on the copy in tmp; returns its error, if any."""
     script = "saveodf.py" if format == "odf" else f"export{format}.py"
     result = subprocess.run(
-        [sys.executable, f"scripts/{script}"], cwd=tmp, capture_output=True, text=True,
+        [sys.executable, f"scripts/{script}"], cwd=tmp, capture_output=True, text=True, check=False,
         timeout=600, env={**os.environ, "PROJECT": project, "PYTHONPATH": "scripts",
                           "PYTHONDONTWRITEBYTECODE": "1"})
     return None if result.returncode == 0 else (result.stdout + result.stderr)[-2000:]
@@ -311,8 +312,7 @@ class ExportTest(unittest.TestCase):
                 shutil.copytree(documents.SCRIPTS, Path(tmp, "scripts"),
                                 ignore=shutil.ignore_patterns("__pycache__"))
                 with ThreadPoolExecutor(os.cpu_count() or 2) as pool:
-                    errors = dict(zip(formats(), pool.map(lambda f: export(tmp, project, f),
-                                                          formats())))
+                    errors = dict(zip(formats(), pool.map(partial(export, tmp, project), formats())))
                 for format in formats():
                     with self.subTest(project=project, format=format):
                         self.assertIsNone(errors[format], errors[format])
